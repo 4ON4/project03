@@ -1,0 +1,66 @@
+﻿/* body{background:url(../abac04.png) no-repeat center top; opacity:0.8; } */
+/* /body{background:green;}  */
+html{overflow-y:scroll;}
+*{margin:0; padding:0; border:none;}
+ul,ol,li {list-style:none;}
+a{text-decoration:none;}
+/* .fl{float:left;}
+.fl{float:right;} */
+.cf:after{content:''; display:block; clear:both;}
+.hidden{position: absolute; overflow:hidden; text-indent:-555555em; font-size:0;}
+
+/* 헤더 */
+header{height:155px; /* background:#ffffff; */ }
+#header{ height:155px; background:#698c00; background:linear-gradient(to right, rgba(107, 100, 190, 1) 0%, rgba(107, 100, 190, 1) 30%, rgba(0, 175, 81, 1) 73%, rgba(0, 175, 81, 1) 100%); }
+
+	/* 헤더윗부분 */
+	#top_header{/* background:linear-gradient(to right, rgba(107, 100, 190, 1) 0%, rgba(107, 100, 190, 1) 30%, rgba(0, 175, 81, 1) 73%, rgba(0, 175, 81, 1) 100%); */ width:100%; height:54px;}
+		.topheaderWrap{width:1420px; height:54px; margin:0 auto;}
+
+		/* 왼쪽이동메뉴 */
+			.topheaderWrap .libraryfind{width: 280px; float:left; background:#9326ff;} 
+			.topheaderWrap .libraryfind ul.library_nav li{float:left; text-align:center;} 
+			.topheaderWrap .libraryfind ul.library_nav li a{display:block; color:#ffffff; font-size:18px; font-weight:bold; padding:12px 11px;} 
+			.topheaderWrap .libraryfind ul.library_nav li a span{margin-left:100px;} 
+		
+		/* 오른쪽 이동메뉴 */
+		
+		.library_top_menu{float:right;}
+		.library_top_menu ul li{float:left; color:#ffffff; font-weight:bold; width:70px; margin:8px 2px;}
+		.library_top_menu ul li.social{float:left; color:#ffffff; font-weight:bold; width:35px; margin:8px 2px;}
+		.library_top_menu ul li a{display:block; color:#ffffff;}
+
+	/* 헤더 아래부분 */
+	#bottom_header{width:100%; background:#ffffff; /* overflow:hidden; */ border-bottom:1px dotted #999999; position:relative;}
+		.bottom_header_wrap{width:1420px; margin:0px auto; background:#af0000;}
+		.logo{float:left; width:300px; background:#ffffff; padding:22px;}
+		/* ul.main{position:relative; top:0; left:0; width:100%; background:yellow;} */
+		ul.main li{float:left; text-align:center;}
+		ul.main li a{display:block; font-size:25px; color:#666666; font-weight:bold;}
+		ul.main>li>a{ background:#ffffff; padding:25px; margin:10px 0 10px 30px;}
+		ul.main>li>a:hover{ background:#99ccff;}
+		ul.main li a{display:block;}
+		ul.main ul.sub{position:absolute; top:104px; left:0; width:100%; background:blue; height:500px; display:none;}
+		ul.main ul.sub li{float:left;}
+		ul.main ul.sub li a{display:block;}
+
+	/* 섹션 */
+
+	section{height:1300px; background:red;}
+	#section{height:1300px; width:1420px; margin:0 auto; background:yellow;} 
+		.left_menu{float:left;  height:800px; width:320px;; position:relative; top:20px;}
+		/* .left_menu h2{float:left; background:blue;} */
+		.left_menu h2{background:#6b64be url(../images/lnb_bg.png) no-repeat ;  font-size: 1.750em; line-height: 142px; color: #ffffff;  text-align: center; position:absolute; top:55px; left:20px; width:244px; height:110px; border:2px solid #9326ff;}
+
+		
+		.left_menu ul{position:absolute; top:166px; font-weight:bold; left:20px; border:2px solid #9326ff;}
+		.left_menu ul li{border:2px solid #ffffff; text-align:center;  width:241px; border-bottom:1px solid #6b64be;}
+		.left_menu ul li a{display:block; padding: 22px 35px 22px 20px; color:#999999; font-weight:bold; background:#ffffff;}
+		
+		.contents{float:left; background:}
+		.contentheaderwrap{width:1100px; height:200px; background:blue;}
+		.contentbodywrap{width:1100px; height:1098px; background:green;}
+
+/* 푸터 */
+
+footer{width:100%; height:200px; /* background:green; */}

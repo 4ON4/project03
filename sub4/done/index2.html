@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<link rel="stylesheet" href="css/index2.css"/>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1>도서관소식</h1>
+			<div class="fl"><a href="#">Home</a></div>
+			<div class="fl"><a href="#">이용안내</a></div>
+			<div class="fl"><a href="#">도서관소식</a></div>
+			<div class="fr"><a href="#">프린트</a></div>
+			<div class="fr"><a href="#">공유</a></div>
+		</div> <!-- id="header" -->
+		<div id="section">
+			<form action="#">
+				<fieldset>
+					<label for="search"></label>
+					<select name="search" id="search">
+						<option value="전체도서관">전체도서관</option>
+						<option value="안양도서관">안양도서관</option>
+						<option value="호계도서관">호계도서관</option>
+						<option value="경기도서관">경기도서관</option>
+					</select>
+					<label for="search"></label>
+					<select name="search" id="search">
+						<option value="제목">제목</option>
+						<option value="출간년도">출간년도</option>
+						<option value="단어검색">단어검색</option>
+					</select>
+					<input id="find" name="find" type="text" />
+					<input type="button" value="검색"/>
+				</fieldset>
+			</form>
+			<table>
+			<tr>
+				<th><span>번호</span></th>
+				<th><span>제목</span></th>
+				<th><span>첨부</span></th>
+				<th><span>작성일</span></th>
+				<th><span>조회수</span></th>
+			</tr>
+			<tr>
+				<td>2653</td>
+				<td>어린이도서관 온라인 책 읽어주기 운영안내</td>
+				<td></td>
+				<td>작성일</td>
+				<td>조회수</td>
+			</tr>
+			<tr>
+				<td>2652</td>
+				<td>어린이도서관 온라인 책 읽어주기 운영안내</td>
+				<td></td>
+				<td>작성일</td>
+				<td>조회수</td>
+			</tr>
+			<tr>
+				<td>2651</td>
+				<td>어린이도서관 온라인 책 읽어주기 운영안내</td>
+				<td></td>
+				<td>작성일</td>
+				<td>조회수</td>
+			</tr>
+			<tr>
+				<td>2650</td>
+				<td>어린이도서관 온라인 책 읽어주기 운영안내</td>
+				<td></td>
+				<td>작성일</td>
+				<td>조회수</td>
+			</tr>
+			</table>
+			<div id="page" class="cf">
+				<div class="prev">이전</div>
+				<div class="active">1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+				<div>5</div>
+				<div>6</div>
+				<div>7</div>
+				<div>8</div>
+				<div>9</div>
+				<div>10</div>
+				<div class="next">다음</div>
+			</div>
+			
+		</div> <!-- id="section" -->
+		
+	</div> <!-- id="wrap" -->
+</body>
+</html>

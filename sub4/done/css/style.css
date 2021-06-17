@@ -1,0 +1,49 @@
+﻿*{margin:0; padding:0;}
+/* body{color: white; font:1.5em; font-weight:bold;} */
+html{overflow-y:scroll;}
+ul,li,a{list-style:none; text-decoration:none;}
+.cf:after{content: ''; display:block; clear:both;}
+
+body{background: url(../images/abac01.png) no-repeat center top; opacity:0.8;}
+
+/* 제일 상단의 이동메뉴 */
+#headWrap{background:linear-gradient(to right, rgba(107, 100, 190, 1) 0%, rgba(107, 100, 190, 1) 30%, rgba(0, 175, 81, 1) 73%, rgba(0, 175, 81, 1) 100%); height:45px; }
+	#eventcontents{width:1420px; margin:0 auto; background:blue;}
+		#nav{width:250px; float:left; padding:10px 10px 10px 10px; margin-left:10px; font-size:18x; font-weight:bold; color:#ffffff; background:#4b4685;}
+
+		#librarymenu {padding:12px 10px 12px 10px;  font-weight:bold; color:#ffffff;  float:right; }
+		#librarymenu ul li{ display:block; float:left; margin-right:30px;}
+
+		
+	
+/* 상단 이동메뉴 아래 이동칸 */
+#menuWrap{background:#73ffff; height:115px; }
+#movementlibrary{width:1420px; height:115px; margin:0 auto;}
+	
+	.oneInner{background: yellow; height:115px; position:relative; left:0px; top:0px;}
+		.oneDepth{width:1420px; background:blue; height: 115px; margin:0 auto;}
+		.oneDepth > li{float: left; padding: 5px 20px;}
+		.oneDepth > li > a{display: block; float:left; padding:5px 20px; color:white;}
+		.oneDepth > li:hover .twoInner{display:block;}
+
+	.twoInner{width:100%; background:skyblue; /* height:500px; */ position:absolute; top:50px; left:0px; display:none; float:left;}
+		.twoDepth{width: 1420px; background:#2d00b3;  height:500px; margin:0 auto;}
+		.twoDepth > ul{float:left; }
+		.twoDepth ul li a{color:white;}
+
+
+
+/* 콘텐츠 */
+#sectionWrap{background:#2693ff; height:2850px;}
+	#display_banner{background:#ff265c; height:760px; width:1420px; margin:0 auto;}
+	#site_content1{background:#a11aaa; height:550px; width:1420px; margin:0 auto;}
+	#site_content2{background:#ffff99; height:680px; width:1420px; margin:0 auto;}
+	#site_content3{background:#0040ff; height:860px; width:1420px; margin:0 auto;}
+	
+/* 최하단 */
+#footerWrap{background:#868695; height:200px;}
+	#footer_content{background:#ff794c; height:200px; width:1420px; margin:0 auto;}
+
+.fl{float:left;}
+.fr{float:right;}
+.cb{clear:both;}

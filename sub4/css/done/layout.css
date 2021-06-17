@@ -1,0 +1,37 @@
+﻿/* 전체설정 */
+*{margin:0; padding:0; border:0;}
+html{overflow-y:scroll;}
+
+body{background:url(../abac05.png) no-repeat center top; opacity:0.8; font-size:1.2em;}
+ul, li ,h1, h2, a{display:block; text-decoration:none;}
+.contents_h>ul{margin-left;}
+
+/* 크기,높이값설정 */
+#wrap{height:1500px; width:1420px; background:#aa3111; margin: 0 auto;}
+#header{background-image:url(../images/lnb_bg.png) no-repeat; height:155px; width:1420px; background:#777777; margin-bottom:5px;}
+#section{height:1170px; width:1420px; background:#777777; margin-bottom:5px;}
+	#menu{height:1170px; width:290px; background:#aaaaaa; float:left; margin-right:5px;}
+	#contents{height:1170px; width:1125px; background:#e6ff99; float:left;}
+	#board{background: #00a0aa ;}
+#footer{height:165px; width:1420px; background:#777777;}
+
+.contents_h{width:1125px; height:150px; background:#1111a1; position:relative;}
+	h1{font-size:45px; position:relative; left:20px; top:35px; }
+	ul>li{position:relative; left:20px; top:35px;}
+	a:hover{color:#666600;}
+	a:visited{color:#666600;}
+	/* .search_wrap{width:1125px; height:100px; background:#a1aaa1; position:relative; margin:50px 150px 0 0;} */
+	/* .contents_b{width:1125px; height:970px; background:#a111a1; position:relative;} */
+	/* .board{width:1125px; height:830px; background:#aafff1; position:relative; margin:10px 0 5px 0;} */
+
+
+/* .search_wrap fieldset{float:left; } */
+/* .search_wrap select{height: 30px;} */
+/* .search_wrap input{height: 30px; line-height: 22px; width: 350px;} */
+/* .search_wzrap button{width:85px; height:50px; background:#333333; color:#ffffff; font-size:18px;} */
+
+/* 기본값 */
+.fl{float:left;}
+.fr{float:right;}
+.cb{clear:both;}
+.cf:after{content: ''; display:block; clear:both;}
