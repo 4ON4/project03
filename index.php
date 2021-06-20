@@ -34,7 +34,7 @@
 		cnt--;
 		if(cnt < 0) {
 			clearInterval(tid);
-			self.location = "main.html";
+			self.location = "sub6/sub6.html";
 		}
 	}
 	function time_format(s) {
