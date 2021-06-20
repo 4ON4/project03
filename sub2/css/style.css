@@ -61,8 +61,8 @@ section{width:100%; height:4000px;}
 	
 	.function2{width:650px; height:150px; float:left;  position:relative;}
 	
-		.print{width:60px; height:60px; background:url(../images/ico_sns.png) no-repeat; background-color:#ffffff;  background-position:10px -32px;border-radius:50%; position:absolute; right:0; bottom:0px; text-align:center; cursor:pointer; z-index:10;}
-		.share_con{position:absolute; right:125px; bottom:0px; z-index:10; display:none;}
+		.print{width:60px; height:60px; background:url(../images/ico_sns.png) no-repeat; background-color:#ffffff;  background-position:10px -32px;border-radius:50%; position:absolute; right:0; bottom:2px; text-align:center; cursor:pointer; z-index:10;}
+		.share_con{position:absolute; right:125px; bottom:2px; z-index:10; display:none;}
 			.share_con>ul>li{float:left; margin-right:5px;}
 			.share_con>ul>li>a {display:block;}
 			
@@ -88,10 +88,10 @@ section{width:100%; height:4000px;}
 	.left_menu>ul>li>a{display:block; color:#333333; font-size:18px; padding:25px 0; border-bottom:1px solid #dddddd;  text-indent:10px; background:#ffffff;}
 	.left_menu>ul>li>a>span{float:right; color: #333333; width:18%; font-size:20px;}
 	.left_menu ul li ul.left_menu_sub {display:none; }
-	.left_menu ul li ul.left_menu_sub li a{display:block; color:#333333; font-size:18px; padding:15px 0; text-indent:10px; background:#dddddd; }
+	.left_menu ul li ul.left_menu_sub li a{display:block; color:#333333; font-size:16px; padding:15px 0; text-indent:10px; background:#dddddd; }
 
 	/* 레프트메뉴엑티브 */
-	.left_menu ul li.left_active>a{color:#6b64be; border:none; background:#ddd6f2; font-weight:bold;}	
+	.left_menu ul li.left_active>a{color:#6b64be; border:none; font-weight:bold;}	
 	.sub_active{color:#333333; text-decoration:underline; font-weight:bold;}
 	
 	
@@ -123,12 +123,23 @@ section{width:100%; height:4000px;}
 		.content .con_box_header a h3{color:#333333;}
 		.content .con_box_header p{float:left; text-indent:20px;}
 		.content .con_box_body {width:95%;}
-		.content .con_box_body p{ text-indent:20px; font-size:18px; color:#444444;}
+		.content .con_box_body p{ text-indent:20px; font-size:18px; color:#666666; line-height:2em; position: relative; left: 15px; top:10px;}
 		
+		.move_button{width:1195px; height:100px; position:relative; }
+		.move_button ul{position:absolute; top:30px; left: 100px;}
+		.move_button ul li{float:left;}
+		.move_button ul li.on a{color:#d93600; font-weight:bold;}
+		.move_button ul li a{display:block; width:50px; height:40px; background:#eeeeee; margin-right:20px; color:#333333; line-height:40px; text-align:center;}
+		.move_button ul li.prev a{background:#444444; color:#ffffff; border-radius:2px;}
+		.move_button ul>li.prev_icon img{width:70%; height:70%; margin-top:8px;}
+		.move_button ul>li.prev_icon a{background:#666666; border-radius:2px;}
+		.move_button ul li.next a{background:#444444; color:#ffffff; border-radius:2px;}
+		.move_button ul li.next_icon a{background:#666666; border-radius:2px;}
+		.move_button ul li.next_icon img{width:70%; height:70%; margin-top:8px;}
 
 /* 풋터 */
 footer{width:100%; height:200px; }
-#footerwrap{width:100%; height:200px; position:relative; z-index:1;}
+#footerwrap{width:100%; height:200px;}
 	#footer_menu{width:1420px; height:200px; margin:0 auto; }
 	/* 풋터 첫번째 칸 */
 	.footer_menu_top{width:1420px; height:100px;  background:#e8e9ec;}

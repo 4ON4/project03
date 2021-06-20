@@ -11,15 +11,11 @@
 
 	<!-- jquery -->
     <script src="js/jquery-1.9.1.min.js"></script>
-	<script src="js/jquery.easing.1.3.min.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/gray.js"></script>
-	<script src="js/html5div.js"></script>
-	<script src="js/html5shiv.js"></script>
-	<script src="js/prefixfree.min.js"></script>
-</head>
-<body>
+	<script src="js/script.js"></script>	
+	<script src="js/gray.js"></script>	
 
+	</script>
+<body>
 	<!-- 헤더 -->
 	<header>
 		<!-- 헤더윗부분 -->
@@ -41,7 +37,7 @@
 					<!-- 메뉴랩 -->
 					<div class="library_menu_wrap">
 						<ul class="oneInner">
-							<li class="oneDepth on" title="도서관 자료검색 메뉴입니다."><a href="sub1.html">도서관자료검색</a>
+							<li class="oneDepth" title="도서관 자료검색 메뉴입니다."><a href="../sub1/sub1.html">도서관자료검색</a>
 								<div class="twoInner">
 									<div class="twoDepth">
 										<div class="sub_blank_box"></div>
@@ -98,7 +94,7 @@
 									</div>
 								</div>							
 							</li>
-							<li class="oneDepth"><a href="../sub2/sub2.html">도서정보</a>
+							<li class="oneDepth on"><a href="sub2.html">도서정보</a>
 								<div class="twoInner">
 									<div class="twoDepth">
 										<div class="sub_blank_box"></div>
@@ -390,18 +386,16 @@
 		</div> <!-- 헤더아랫부분 -->
 	</header>
 
-
 	<section id="section">
 		<div id="contentsWrap">
 			<div class="content_header">
 				<div class="header_wrap">
 					<div class="function1">
-						<h2>도서관 자료/검색</h2>
+						<h2>사서추천도서</h2>
 						<ul>
 							<li><a href="../main.html">홈</a></li>
-							<li><a href="#">&gt;&nbsp;자료검색</a></li>
-							<li><a href="#">&gt;&nbsp;소장자료검색</a></li>
-							<li><a href="#">&gt;&nbsp;통합검색</a></li>
+							<li><a href="#">&gt;&nbsp;독서정보</a></li>
+							<li><a href="#">&gt;&nbsp;사서추천도서</a></li>
 						</ul>
 					</div>
 					<div class="function2">
@@ -424,47 +418,253 @@
 			<div class="content_bottom">
 				<div id="left_content">
 					<div class="left_menu">
-						<h1 class="hidden">도서관자료/검색</h1>
+						<h1 class="hidden">도서정보</h1>
 						<div class="left_menu_logo"><a href="#"><img src="images/lnb_bg.png" alt=""/></a></div>
 						<div class="left_menu_text"><span>도서관자료/검색</span></div>
 						<ul>
-							<li><a href="#">소장자료검색<span>+</span></a>
+							<li><a href="#">사서추천도서<span>-</span></a></li>
+							<li><a href="#">주제별검색<span>+</span></a>
 								<ul class="left_menu_sub">
-									<li><a href="#">통합검색</a></li>
-									<li><a href="#">고급검색</a></li>
-								</ul>
+									<li><a href="#">이달의 인기도서</a></li>
+									<li><a href="#">연령별 인기도서</a></li>
+									<li><a href="#">예약 인기도서</a></li>
+									<li><a href="#">주제별 인기도서</a></li>
+								</ul>							
 							</li>
-							<li><a href="#">주제별검색<span>-</span></a></li>
-							<li><a href="#">신작자료검색<span>-</span></a></li>
-							<li><a href="#">정기간행물검색<span>-</span></a></li>
-							<li><a href="#">비치희망도서신청<span>-</span></a></li>
+							<li><a href="#">원술/학술정보<span>-</span></a></li>
+							<li><a href="#">향토자료<span>-</span></a></li>
+							<li><a href="#">공공도서관 인기도서<span>-</span></a></li>
+							<li><a href="#">도서기증 안내<span>-</span></a></li>
 						</ul>
-					</div>
-				</div> <!-- id="left_content" -->			
-				<div id="body_library_search">
-					<div class="library_search_box">
-						<div class="con1"><p>통합검색</p></div>
-						<div class="con2">
-						<input type="text" id="con2_search" value="내용을 입력해주세요." name="searchcontents" class="guideText"/>
+					</div> <!-- class="left_menu" -->
+				</div> <!-- id="left_content" -->
+				
+				<div id="right_content">
+					<div class="library_search">
+						<div class="searchBox">
+							<select name="searchLibrary" id="search_library">
+								<option value="전체도서관">전체도서관</option>
+								<option value="석수도서관">석수도서관</option>
+								<option value="만안도서관">만안도서관</option>
+								<option value="삼덕도서관">삼덕도서관</option>
+								<option value="박달도서관">박달도서관</option>
+								<option value="평촌도서관">평촌도서관</option>
+								<option value="관양도서관">관양도서관</option>
+								<option value="비산도서관">비산도서관</option>
+								<option value="호계도서관">호계도서관</option>
+								<option value="어린이도서관">어린이도서관</option>
+								<option value="벌말도서관">벌말도서관</option>
+							</select>					
+							<select name="searchLibrary2" id="search_library2">
+								<option value="제목">제목</option>
+								<option value="내용">내용</option>
+							</select>
+							<input type="text" value="검색내용을 입력해 주세요" class="searchText guideText"   size="50" name="input1"/>
+							<button name="searchBtn" id="searchBtn">검색</button>
 						</div>
-						<div class="con3">
-							<button type="button">고급검색</button>
-						</div>
 					</div>
-					<div class="library_search_option">
+					<div class="tab">
 						<ul>
-							<li>다국어 선택</li>
-							<li>도서관 선택</li>
+							<li class="tab_con on"><a href="#">전체</a></li>
+							<li class="tab_con"><a href="#">인문</a></li>
+							<li class="tab_con"><a href="#">사회</a></li>
+							<li class="tab_con"><a href="#">과학</a></li>
+							<li class="tab_con"><a href="#">어문학</a></li>
+							<li class="tab_con"><a href="#">어린이</a></li>
+						</ul> 
+					</div>
+					
+					<div class="contents">
+				
+						<div class="content">
+							<div class="img_box"><img src="images/con1.jpg" alt="기꺼이 오늘을 살다"/></div>							
+							<div class="con_box_header">
+								<a href="#"><h3>기꺼이 오늘을 살다</h3></a>
+								<p>저자:가토 다이조 지음,이영미 옮김</p>
+								<p>발행처:나무생각</p>
+								<p>발행연도:2020</p>
+							</div>
+							<div class="con_box_body">
+								<p>와세다대학 심리학과 명예교수인 '가토 다이조'는 이 책에서 삶의 무게에 짓눌리지 않고 나를 지키려는 심리학을 풀어나간다. 저자는 자신에게 주어진 인생의 짐을 기꺼이 짊어지는 태도가 그 사람에게 자신감과 행복을 가져다준다고 말한다. 또한 삶에서 가치를 발견하는 것은 자기 스스로 짐을 기꺼이 짊어졌을 때이며 대충대충 살아가는 인생에는 최후의 순간에 고민과...</p>
+							</div>
+						</div>
+						
+						<div class="content">
+							<div class="img_box"><img src="images/con2.jpg" alt="우리 모두 자살 사별자입니다"/></div>
+							<div class="con_box">
+								<div class="con_box_header">
+									<a href="#"><h3>우리는 모두 자살 사별자입니다.</h3></a>
+									<p>저자 : 고선규 지음</p>
+									<p>발행처:창비발행연도</p>
+									<p>발행연도:2020</p>
+								</div>
+								<div class="con_box_body">
+									<p>“지금의 나를 가능케 한 것은 누군가의‘말’이었다. 언제나 그 말이 내가 힘들 때 일어날 수 있는 힘을 주었고, 절망에 빠졌을 때 희망을 찾게 했고, 궁지에 몰렸을 때 벗어나게 하는 원동력이 되었다. “야, 너두 할 수 있어!”(p.8) 「야, 너두 할 수 있어」의 저자 김민철은 대한민국 사람의 95%가 안다는 야나두의 대표다. 그는 부산에서 태어나 대학까...</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content">
+							<div class="img_box"><img src="images/con3.jpg" alt="야 너두 할수있어 "/></div>
+							<div class="con_box">
+								<div class="con_box_header">
+									<a href="#"><h3>야, 너두 할 수 있어: 당신이 결심한 모든 것을 이루는 8가지 강력한 무기</h3></a>
+									<p>저자: 라곰 지음</p>
+									<p>발행처:나무생각</p>
+									<p>발행연도:2020</p>
+								</div>
+								<div class="con_box_body">
+									<p>“지금의 나를 가능케 한 것은 누군가의‘말’이었다. 언제나 그 말이 내가 힘들 때 일어날 수 있는 힘을 주었고, 절망에 빠졌을 때 희망을 찾게 했고, 궁지에 몰렸을 때 벗어나게 하는 원동력이 되었다. “야, 너두 할 수 있어!”(p.8) 「야, 너두 할 수 있어」의 저자 김민철은 대한민국 사람의 95%가 안다는 야나두의 대표다. 그는 부산에서 태어나 대학까...</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content">
+							<div class="img_box"><img src="images/con4.jpg" alt="자본주의 할래 사회주의할래"/></div>
+							<div class="con_box">
+								<div class="con_box_header">
+									<a href="#"><h3>자본주의 할래? 사회주의 할래?</h3></a>
+									<p>저자:임승수 지음; 윤수훈 그림</p>
+									<p>발행처:우리학교</p>
+									<p>발행연도:2020</p>
+								</div>
+								<div class="con_box_body">
+									<p>누구나 살아가면서 자본주의, 사회주의라는 단어를 들어본 적 있을 것이다. 그냥 들어본 것이 아니라 뉴스, 신문 등의 대중매체나 사람들 간 대화 같은 일상생활 속에서 꽤 자주 듣는 단어에 속할 것이다. 또 학교 사회교과목 수업 시간에 자본주의와 사회주의가 무엇인지에 대해서 배워본 적도 있을 것이다. 그러나 누군가 ‘자본주의가 뭐죠?’라고 질문한다면, 명확히 ...</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content">
+							<div class="img_box"><img src="images/con5.jpg" alt="검은행복"/></div>
+							<div class="con_box">
+								<div class="con_box_header">
+									<a href="#"><h3>검은 행복</h3></a>
+									<p>저자:윤미래 (노래) 지음; 루시 그림</p>
+									<p>발행처:다림</p>
+									<p>발행연도:2020</p>
+								</div>
+								<div class="con_box_body">
+									<p>“세상이 미울 때, 음악이 날 위로해 주네.” “세상이 미울 때, 음악이 날 일으켜 주네.”(p.18)   한국을 대표하는 힙합 가수 윤미래의 어린시절 이야기이다. 유난히 검었던 피부색으로 어린 시절 받았던 상처와 아픔을 음악의 힘으로 극복해낸 유년기를 노래한 ‘검은 행복’ 가사에 생생한 그림이 더해져 감동적인 동화책이 되었다.   친구들...</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content">
+								<div class="img_box"><img src="images/con6.jpg" alt="내가 바로 그 악마입니다"/></div>
+							<div class="con_box">
+								<div class="con_box_header">
+									<a href="#"><h3>내가 바로 그 악마입니다</h3></a>
+									<p>저자:서석영 </p>
+									<p>발행처:풀과바람</p>
+									<p>발행연도:2020</p>
+								</div>
+								<div class="con_box_body">
+									<p>“어린 시절 철없이 행동했던 저 자신이 참으로 부끄럽고 후회가 됩니다. 피해를 본 친구들에게 다가가는 중입니다. 이번 일로 과거를 돌아보며 좋은 사람이 되도록 노력하겠습니다. 깊이 반성하고 자숙하며 살겠습니다.”(p.104) 연예인, 운동선수들의 ‘학폭 미투’가 연일 인터넷을 뜨겁게 달구고 있다. 다양한 매체의 발달로 더욱 친숙해진 인기인들의 학창시절 민낯...</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content">
+							<div class="img_box"><img src="images/con7.jpg" alt="오리진"/></div>
+							<div class="con_box">
+								<div class="con_box_header">
+									<a href="#"><h3>오리진</h3></a>
+									<p>루이스 다트넬 지음; 이충호 옮김</p>
+									<p>발행처:흐름</p>
+									<p>발행연도:2020</p>
+								</div>
+								<div class="con_box_body">
+									<p>「오리진」의 저자 루이스 다스텔은 지질학적 관점에서 인류의 역사를 바라보며 지구가 인류의 역사에 어떤 영향을 미쳤는가에 초점을 맞춰 이야기를 풀어간다. 제1장 ‘우리는 어떻게 만들어졌는가’에서는 유인원의 인류가 판의 활동에 따라 어떤 식으로 진화하고 도구를 사용하게 되었는지에 관해서, 제2장 ‘사피엔스는 왜 이동을 시작했는가’에서는 지구의 낮은 기온변화가 ...</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content">
+							<div class="img_box"><img src="images/con8.jpg" alt="미아로 산다는 것: 워킹푸어의 시대, 우리가 짓고 싶은 세계"/></div>
+							<div class="con_box">
+								<div class="con_box_header">
+									<a href="#"><h3>미아로 산다는 것: 워킹푸어의 시대, 우리가 짓고 싶은 세계</h3></a>
+									<p>저자 : 박노자 지음</p>
+									<p>발행처:한겨레출판</p>
+									<p>발행연도:2020</p>
+								</div>
+								<div class="con_box_body">
+									<p>“저는 가끔 제 삶을 돌이켜볼 때면 이 삶을 정리할 수 있는 유일한 단어는 ‘미아’가 아닌가, 라는 생각이 들곤 합니다.”(p.7) 저자 박노자는 2001년 한국으로 귀화한 러시아 태생의 한국인이다. 저자는 어느 문화에도 소속되지 못한 채로 살아가는 자신의 삶을 ‘미아’에 빗대며 이야기를 시작한다. 저자는 ‘미아로 산다는 것’이 비단 자신만의 문제가 아니라...</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content">
+							<div class="img_box"><img src="images/con1.jpg" alt="기꺼이 오늘을 살다"/></div>
+							<div class="con_box">
+								<div class="con_box_header">
+									<a href="#"><h3>기꺼이 오늘을 살다</h3></a>
+									<p>저자:가토 다이조 지음,이영미 옮김</p>
+									<p>발행처:나무생각</p>
+									<p>발행연도:2020</p>
+								</div>
+								<div class="con_box_body">
+									<p>와세다대학 심리학과 명예교수인 '가토 다이조'는 이 책에서 삶의 무게에 짓눌리지 않고 나를 지키려는 심리학을 풀어나간다. 저자는 자신에게 주어진 인생의 짐을 기꺼이 짊어지는 태도가 그 사람에게 자신감과 행복을 가져다준다고 말한다. 또한 삶에서 가치를 발견하는 것은 자기 스스로 짐을 기꺼이 짊어졌을 때이며 대충대충 살아가는 인생에는 최후의 순간에 고민과...</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content">
+							<div class="img_box"><img src="images/con9.jpg" alt="중공업 가족의 유토피아"/></div>
+							<div class="con_box">
+								<div class="con_box_header">
+									<a href="#"><h3>중공업 가족의 유토피아</h3></a>
+									<p>저자:양승훈 글; 정은선 그림</p>
+									<p>발행처:오월의봄</p>
+									<p>발행연도:2020</p>
+								</div>
+								<div class="con_box_body">
+									<p>20세기 초 조선에서는 여학교의 설립이 활발했다. 국권 상실 이후 국가적 위기를 극복 하려면 인재 양성이 중요하고, 이를 위해서는 남성뿐 아니라 여성도 교육시켜야 한다는 판단으로 이어진 것이다. 이로부터 100년 후, 한 산업도시의 흥망성쇠를 연구하는 학자는 도시의 위기를 극복하기 위한 방안으로 ‘여성 인력 확보’를 역설한다. 조선산업의 도시 거제의 이야기...</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content">
+							<div class="img_box"><img src="images/con10.jpg" alt="걱정을 가져가는 집"/></div>
+							<div class="con_box">
+								<div class="con_box_header">
+									<a href="#"><h3>걱정을 가져가는 집</h3></a>
+									<p>저자:백은하 글; 정은선 그림</p>
+									<p>발행처:휴먼어린이</p>
+									<p>발행연도:2020</p>
+								</div>
+								<div class="con_box_body">
+									<p>사람은 누구나 걱정을 하며 살아간다. 다만 걱정거리가 생겨도 금방 잊어버리고 사는 사람이 있고, 안 해도 되는 걱정까지 한가득 마음속에 담아두고 사는 사람이 있을 뿐이다. 이렇게 누구나 가지고 있는 걱정을 가져가주는 집이 존재한다면 어떨까? 『걱정을 가져가는 집』에 나오는 주주형제는 불의의 사고로 가족과 이별하고 보육원으로 오게 된다. 형인 주영이는 사고로...</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>	
+					<div class="move_button">
+						<ul>
+							<li class="prev_icon"><a href="#"><img src="images/left_arrow.png" alt="이전페이지"/></a></li>
+							<li class="prev"><a href="#">이전</a></li>
+							<li><a href="#">1</a></li>
+							<li class="on"><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+							<li class="next"><a href="#">다음</a></li>
+							<li class="next_icon"><a href="#"><img src="images/right_arrow.png" alt="이전페이지"/></a></li>
 						</ul>
 					</div>
-					<div class="library_tab_option"></div>
-				</div>
+				</div>				
 			</div>
 		</div>
-			
+
 	</section>
 
-	<footer>
+	
 		<div id="footerwrap" class="cf">
 			<div id="footer_menu">
 				<div class="footer_menu_top">
@@ -485,6 +685,6 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+
 </body>
 </html>
