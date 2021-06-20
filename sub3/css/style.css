@@ -61,8 +61,8 @@ section{width:100%; height:1350px;}
 	
 	.function2{width:650px; height:150px; float:left;  position:relative;}
 	
-		.print{width:60px; height:60px; background:url(../images/ico_sns.png) no-repeat; background-color:#ffffff;  background-position:10px -32px;border-radius:50%; position:absolute; right:0; bottom:0px; text-align:center; cursor:pointer; z-index:10;}
-		.share_con{position:absolute; right:125px; bottom:0px; z-index:10; display:none;}
+		.print{width:60px; height:60px; background:url(../images/ico_sns.png) no-repeat; background-color:#ffffff;  background-position:10px -32px;border-radius:50%; position:absolute; right:0; bottom:2px; text-align:center; cursor:pointer; z-index:10;}
+		.share_con{position:absolute; right:125px; bottom:2px; z-index:10; display:none;}
 			.share_con>ul>li{float:left; margin-right:5px;}
 			.share_con>ul>li>a {display:block;}
 			
