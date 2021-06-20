@@ -1,9 +1,9 @@
 ﻿$(function(){
 	
-	var guideClass = 'guide';
-	// css 에서 class="guide"를 변수처리
+	var guideClass = 'gray';
+	// css 에서 class="gray"를 변수처리
 	
-	$('.guide_text').each(function(){
+	$('.guideText').each(function(){
 		var guideText=this.defaultValue;
 		//guideText.get(0)="이름을 입력해주세요"
 		//guideText.get(1)="메시지를 입력해주세요"

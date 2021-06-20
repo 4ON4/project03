@@ -12,13 +12,13 @@
 
 	<!-- jquery -->
     <script src="js/jquery-1.9.1.min.js"></script>
-	<script src="js/gray.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/gray.js"></script>
 	<!-- 낮은버전 시맨틱 태그 -->
 	<script src="js/html5div.js"></script>
 	<script src="js/html5shiv.js"></script>
 	<!-- 프리픽스 -->
-	<script src="js/prefixfree.min.js"></script>	
+	<script src="js/prefixfree.min.js"></script>
 </head>
 <body>
 
@@ -43,7 +43,7 @@
 					<!-- 메뉴랩 -->
 					<div class="library_menu_wrap">
 						<ul class="oneInner">
-							<li class="oneDepth" title="도서관 자료검색 메뉴입니다."><a href="/../sub1/sub1.html">도서관자료검색</a>
+							<li class="oneDepth" title="도서관 자료검색 메뉴입니다."><a href="../sub1/sub1.html">도서관자료검색</a>
 								<div class="twoInner">
 									<div class="twoDepth">
 										<div class="sub_blank_box"></div>
@@ -438,11 +438,22 @@
 				</div> <!-- id="left_content" -->
 				<div id="right_content">
 					<div class="login_box">
+						<img src="images/img_login.jpg" alt="로그인을 해주세요"/>
 						<ul>
-							<li><input type="text" placeholder="ID"/></li>
-							<li><input type="text" placeholder="PASSWORD"/></li>
+							<li><input type="text" class="guideText" name="id" value="ID"/></li>
+							<li><input type="text" class="guideText" name="password" value="PASSWORD"/></li>
+							<li class="find"><a href="#">아이디 찾기 <span>|</span></a></li>
+							<li class="find"><a href="#">비밀번호 찾기 <span>|</span></a></li>
+							<li class="find"><a href="#">회원가입</a></li>
 						</ul>
-						<button type="button">입력</button>
+						<div class="button"><a href="#">로그인</a></div>
+						<div class="imfornation_box">
+							<ul>
+								<li>안양시 통합회원으로 가입한 경우 <span>도서관신규회원등록(새창)</span> 페이지에서 최초 1회 로그인 후 도서관 홈페이지 이용이 가능합니다.</li>
+								<li>로그인이 안되시는 경우 한/영 키와 Caps Lock 키가 눌러져 있지 않은지 확인하세요.</li>
+								<li>계속해서 로그인이 안되시는 경우 관리자에게 문의하시기 바랍니다.</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -460,7 +471,7 @@
 						<li><a href="#">독서관련법규</a></li>
 					</ul>
 					<div class="f_con1">
-					<input type="text" class="guide_text" value="관련기관사이트"/>
+					<input type="text" class="guideText" value="관련기관사이트"/>
 					<button type="button" class="btn">이동</button>
 					</div>
 				</div>
