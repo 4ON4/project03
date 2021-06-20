@@ -14,49 +14,13 @@
 	<!-- jquery -->
     <script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/script.js"></script>
-	<script>
-	var tid;
-	var cnt = parseInt(20);//초기값(초단위)
-	function counter_init() {
-		tid = setInterval("counter_run()", 1000);
-	}
+	<script src="js/gray.js"></script>	
+	<!-- 낮은버전 시맨틱 태그 -->
+	<script src="js/html5div.js"></script>
+	<script src="js/html5shiv.js"></script>
+	<!-- 프리픽스 -->
+	<script src="js/prefixfree.min.js"></script>		
 
-	function counter_reset() {
-		clearInterval(tid);
-		cnt = parseInt(60);
-		counter_init();
-	}
-
-	function counter_run() {
-		document.getElementById("counter").innerText = time_format(cnt);
-		cnt--;
-		if(cnt < 0) {
-			clearInterval(tid);
-			self.location = "main.html";
-		}
-	}
-	function time_format(s) {
-		var nHour=0;
-		var nMin=0;
-		var nSec=0;
-		if(s>0) {
-			nMin = parseInt(s/60);
-			nSec = s%60;
-
-			if(nMin>60) {
-				nHour = parseInt(nMin/60);
-				nMin = nMin%60;
-			}
-		} 
-		if(nSec<10) nSec = "0"+nSec;
-		if(nMin<10) nMin = "0"+nMin;
-
-		return ""+nHour+":"+nMin+":"+nSec;
-	}
-	</script>
-	<script>
-	counter_init();
-	</script>
 </head>
 <body>
 
@@ -65,9 +29,6 @@
 		<!-- 헤더윗부분 -->
 		<div id="headerGnb" class="cf">
 			<div class="headerlibrary_gnb">
-				<div class="counter_wrap">
-					<span id="counter"></span><span class="counter_text1">후</span><br><span class="counter_text2">자동로그아웃</span><input class="counter_button" type="button" value="연장" onclick="counter_reset()">
-				</div>
 				<ul>
 					<li title="회원가입화면으로 이동합니다."><a href="#">회원가입</a></li>
 					<li title="안양시립도서관 사이트맵으로 이동합니다."><a href="https://lib.anyang.go.kr/intro/siteMap.do">사이트맵</a></li>
