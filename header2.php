@@ -22,7 +22,7 @@
     if (!$userid){
     ?>                  
                     <li title="회원가입화면으로 이동합니다."><a href="member_form.php">회원가입</a></li>
-                    <li title="로그인화면으로 이동합니다."><a href="login_form.php">로그인</a></li>   
+                    <li title="로그인화면으로 이동합니다."><a href="member_login.php">로그인</a></li>   
 
 <?php
     } else {
@@ -107,7 +107,8 @@
                                             <li><a href="#">관심도서목록</a></li>
                                             <li><a href="#">추천도서목록</a></li>
                                             <li><a href="#">문학행사신청조회</a></li>
-                                        </ul>                               
+                                            <li><a href="#">도서관에 문의하기</a></li>
+                                        </ul>                              
                                     </div>
                                 </div>                          
                             </li>
@@ -164,7 +165,8 @@
                                             <li><a href="#">관심도서목록</a></li>
                                             <li><a href="#">추천도서목록</a></li>
                                             <li><a href="#">문학행사신청조회</a></li>
-                                        </ul>                               
+                                            <li><a href="#">도서관에 문의하기</a></li>
+                                        </ul>                             
                                     </div>
                                 </div>                          
                             </li>
@@ -221,7 +223,8 @@
                                             <li><a href="#">관심도서목록</a></li>
                                             <li><a href="#">추천도서목록</a></li>
                                             <li><a href="#">문학행사신청조회</a></li>
-                                        </ul>                               
+                                            <li><a href="#">도서관에 문의하기</a></li>
+                                        </ul>                              
                                     </div>
                                 </div>                          
                             </li>
@@ -278,7 +281,8 @@
                                             <li><a href="#">관심도서목록</a></li>
                                             <li><a href="#">추천도서목록</a></li>
                                             <li><a href="#">문학행사신청조회</a></li>
-                                        </ul>                               
+                                            <li><a href="#">도서관에 문의하기</a></li>
+                                        </ul>                             
                                     </div>
                                 </div>                          
                             </li>
@@ -335,7 +339,8 @@
                                             <li><a href="#">관심도서목록</a></li>
                                             <li><a href="#">추천도서목록</a></li>
                                             <li><a href="#">문학행사신청조회</a></li>
-                                        </ul>                               
+                                            <li><a href="#">도서관에 문의하기</a></li>
+                                        </ul>                             
                                     </div>
                                 </div>                          
                             </li>
@@ -392,7 +397,8 @@
                                             <li><a href="#">관심도서목록</a></li>
                                             <li><a href="#">추천도서목록</a></li>
                                             <li><a href="#">문학행사신청조회</a></li>
-                                        </ul>                               
+                                            <li><a href="#">도서관에 문의하기</a></li>
+                                        </ul>                              
                                     </div>
                                 </div>                          
                             </li>

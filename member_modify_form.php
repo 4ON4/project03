@@ -9,7 +9,7 @@
 
 	<!-- css -->
 	<link rel="stylesheet" href="css/common.css"/>
-	<link rel="stylesheet" type="text/css" href="./css/member.css">	
+	<link rel="stylesheet" type="text/css" href="css/member.css">	
 	<!-- jquery -->
     <script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/script.js"></script>
@@ -49,7 +49,7 @@
 			<div class="content_header">
 				<div class="header_wrap">
 					<div class="function1">
-						<h2>로그인</h2>
+						<h2>정보수정</h2>
 						<ul>
 							<li><a href="./index.php">홈</a></li>
 							<li><a href="#">&gt;&nbsp;회원정보</a></li>
@@ -76,11 +76,11 @@
 			<div class="content_bottom">
 				<div id="left_content">
 					<div class="left_menu">
-						<h1 class="hidden">회원정보</h1>
+						<h1 class="hidden">회원정보수정</h1>
 						<div class="left_menu_logo"><a href="#"><img src="images/lnb_bg.png" alt=""/></a></div>
-						<div class="left_menu_text"><span>로그인</span></div>
+						<div class="left_menu_text"><span>정보수정</span></div>
 						<ul>
-							<li class="left_active"><a href="#">로그인<span>-</span></a></li>
+							<li><a href="#">로그인<span>-</span></a></li>
 							<li><a href="#">아이디 조회<span>-</span></a></li>
 							<li><a href="#">비밀번호 재발급<span>-</span></a></li>
 							<li><a href="member_form.php">회원가입<span>-</span></a></li>
@@ -94,7 +94,7 @@
 								<div class="form id">
 									<div class="col1"><span>아이디</span></div>
 									<div class="col2">
-										<?=$userid?>
+										<span><?=$userid?></span>
 									</div>                 
 								</div>
 								<div class="clear"></div>

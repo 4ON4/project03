@@ -85,7 +85,7 @@
 						<ul class="login_bottom">
 							<li class="find"><a href="#">아이디 찾기 <span>|</span></a></li>
 							<li class="find"><a href="#">비밀번호 찾기 <span>|</span></a></li>
-							<li class="find"><a href="../member_form.php">회원가입</a></li>
+							<li class="find"><a href="member_form.php">회원가입</a></li>
 						</ul>
 						<div class="button">
 							<a href="#" onclick="check_input()">로그인</a>

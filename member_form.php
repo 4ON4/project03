@@ -129,10 +129,32 @@
 							<li><a href="#">아이디 조회<span>-</span></a></li>
 							<li><a href="#">비밀번호 재발급<span>-</span></a></li>
 							<li class="left_active"><a href="../member_form.php">회원가입<span>-</span></a></li>
+							<li><a href="#">도서관에 문의하기<span>-</span></a></li>							
 						</ul>
 					</div>
 				</div> <!-- id="left_content" -->
 				<div id="right_content">
+					<div class="login_type">
+	    			<div class="text_box">
+	    				<h2>안양시립도서관 회원가입 안내</h2>
+	    				<p>도서관 회원가입을 위해 ‘안양시청 통합회원’으로 가입 후, </p>
+	    				<p>도서관 신규 회원으로 등록하는 절차가 필요합니다.아래 안내에 따라 회원가입 절차를 진행 해주시기 바랍니다.</p>
+	    			</div>						
+						<div class="type_wrap">
+							<div class="type1">
+								<h2>STEP1</h2>
+								<div class="type_header"><h3>안양시 통합회원 회원가입</h3></div>
+								<p>아래 버튼을 클릭하여 <br/>안양시 통합회원가입 페이지에서 <br/>회원가입 절차를 진행해주세요.</p>
+								<button type="button1" class="button1">간편 회원가입</button>
+							</div>
+							<div class="type2">
+								<h2>STEP2</h2>
+								<div class="type_header"><h3>도서관 신규회원 등록</h3></div>
+								<p>안양시 통합회원가입 완료 후<br/> 아래 버튼을 클릭하여, <br/>가입하신 계정정보로 최초 1회만 로그인하시면 <br/>신규회원 등록이 완료됩니다</p>
+								<button type="button2" class="button2">간편 회원가입</button>
+							</div>
+							</div>
+						</div>
 					<div class="login_box">
           	<form  name="member_form" method="post" action="member_insert.php">
 			    	<div class="form_box">
@@ -178,6 +200,13 @@
 					        </div>                 
 				       	</div>
 				       	<div class="clear"></div>
+								<div class="imfornmtion_box">
+									<ul>
+										<li>안양시 통합회원으로 가입한 경우 <span>도서관신규회원등록(새창)</span> 페이지에서 최초 1회 로그인 후 도서관 홈페이지 이용이 가능합니다.</li>
+										<li>로그인이 안되시는 경우 한/영 키와 Caps Lock 키가 눌러져 있지 않은지 확인하세요.</li>
+										<li>계속해서 로그인이 안되시는 경우 관리자에게 문의하시기 바랍니다.</li>
+									</ul>
+								</div>				       	
 				       	<div class="bottom_line"> </div>
 				       	<div class="buttons">
 				       			<p onclick="check_input()">저장하기</p>
@@ -186,7 +215,9 @@
 			    	</div>
 
            </form>
+					</div>						
 					</div>
+
 
 				</div>
 			</div>
