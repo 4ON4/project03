@@ -24,7 +24,7 @@
   
   echo " 
       <script> 
-          location.href = 'index.php'; 
+          location.href = 'index2.php'; 
       </script> 
   "; 
 ?>

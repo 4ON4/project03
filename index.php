@@ -7,6 +7,7 @@
 	<title>안양시립도서관</title>
 	<!-- css -->
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
 	<!-- jquery -->
     <script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.easing.1.3.min.js"></script>
@@ -18,7 +19,7 @@
     </script>	
 	<script>
 	var tid;
-	var cnt = parseInt(20);//초기값(초단위)
+	var cnt = parseInt(5);//초기값(초단위)
 	function counter_init() {
 		tid = setInterval("counter_run()", 1000);
 	}
@@ -34,7 +35,7 @@
 		cnt--;
 		if(cnt < 0) {
 			clearInterval(tid);
-			self.location = "sub6/sub6.html";
+			self.location = "member_login.php";
 		}
 	}
 	function time_format(s) {

@@ -8,13 +8,13 @@
 	<meta name="Generator" content="Notepad++"/>	
 	<title>안양시립도서관</title>
 	<!-- css -->
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/memberform.css"/>
 	<!-- jquery -->
   <script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.easing.1.3.min.js"></script>
 	<script src="js/script.js"></script>
-	<!-- plugin -->
 	<script src="js/gray.js"></script>
+	<!-- plugin -->
 
 <script>
    function check_input()
@@ -86,69 +86,115 @@
 </head>
 <body> 
 	<header>
-    	<?php include "header.php";?>
-    </header>
-	<section>
-		<div id="main_img_bar">
-            <img src="./img/main_img.png">
-        </div>
-        <div id="main_content">
-      		<div id="join_box">
-          	<form  name="member_form" method="post" action="member_insert.php">
-			    <h2>회원 가입</h2>
-    		    	<div class="form id">
-				        <div class="col1">아이디</div>
-				        <div class="col2">
-							<input type="text" name="id">
-				        </div>  
-				        <div class="col3">
-				        	<a href="#"><img src="./img/check_id.gif" 
-				        		onclick="check_id()"></a>
-				        </div>                 
-			       	</div>
-			       	<div class="clear"></div>
-
-			       	<div class="form">
-				        <div class="col1">비밀번호</div>
-				        <div class="col2">
-							<input type="password" name="pass">
-				        </div>                 
-			       	</div>
-			       	<div class="clear"></div>
-			       	<div class="form">
-				        <div class="col1">비밀번호 확인</div>
-				        <div class="col2">
-							<input type="password" name="pass_confirm">
-				        </div>                 
-			       	</div>
-			       	<div class="clear"></div>
-			       	<div class="form">
-				        <div class="col1">이름</div>
-				        <div class="col2">
-							<input type="text" name="name">
-				        </div>                 
-			       	</div>
-			       	<div class="clear"></div>
-			       	<div class="form email">
-				        <div class="col1">이메일</div>
-				        <div class="col2">
-							<input type="text" name="email1">@<input type="text" name="email2">
-				        </div>                 
-			       	</div>
-			       	<div class="clear"></div>
-			       	<div class="bottom_line"> </div>
-			       	<div class="buttons">
-	                	<img style="cursor:pointer" src="./img/button_save.gif" onclick="check_input()">&nbsp;
-                  		<img id="reset_button" style="cursor:pointer" src="./img/button_reset.gif"
-                  			onclick="reset_form()">
-	           		</div>
-           	</form>
-        	</div> <!-- join_box -->
-        </div> <!-- main_content -->
-	</section> 
+    	<?php include "header2.php";?>
+  </header>
 	
+	<section id="section">
+		<div id="contentsWrap">
+			<div class="content_header">
+				<div class="header_wrap">
+					<div class="function1">
+						<h2>회원가입</h2>
+						<ul>
+							<li><a href="../index.html">홈</a></li>
+							<li><a href="#">&gt;&nbsp;회원정보</a></li>
+							<li><a href="#">&gt;&nbsp;로그인</a></li>
+						</ul>
+					</div>
+					<div class="function2">
+						<div class="share_wrap">
+							<div class="share"><a href="공유하기"></a></div>
+							<div class="share_con">
+								<ul>
+									<li><a href="#"><div class="kakaotalk"></div></a></li>
+									<li><a href="#"><div class="twitter"></div></a></li>
+									<li><a href="#"><div class="facebook"></div></a></li>
+									<li><a href="#"><div class="Qr"></div></a></li>
+									<li><a href="#"><div class="link"></div></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="print"><a href="프린트하기"></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="content_bottom">
+				<div id="left_content">
+					<div class="left_menu">
+						<h1 class="hidden">회원정보</h1>
+						<div class="left_menu_logo"><a href="#"><img src="images/lnb_bg.png" alt=""/></a></div>
+						<div class="left_menu_text"><span>회원가입</span></div>
+						<ul>
+							<li><a href="#">로그인<span>-</span></a></li>
+							<li><a href="#">아이디 조회<span>-</span></a></li>
+							<li><a href="#">비밀번호 재발급<span>-</span></a></li>
+							<li class="left_active"><a href="../member_form.php">회원가입<span>-</span></a></li>
+						</ul>
+					</div>
+				</div> <!-- id="left_content" -->
+				<div id="right_content">
+					<div class="login_box">
+          	<form  name="member_form" method="post" action="member_insert.php">
+			    	<div class="form_box">
+	    		    	<div class="form id">
+					        <div class="col1"><span>아이디</span></div>
+					        <div class="col2">
+										<input type="text" name="id">
+					        </div>  
+					        <div class="col3">
+					        	<a href="#"><p onclick="check_id()">중복확인</p></a>
+					        </div>                 
+				       	</div>
+				       	<div class="clear"></div>
+
+				       	<div class="form">
+					        <div class="col1"><span>비밀번호</span></div>
+					        <div class="col2">
+										<input type="password" name="pass">
+					        </div>                 
+				       	</div>
+				       	<div class="clear"></div>
+
+				       	<div class="form">
+					        <div class="col1"><span>비밀번호 확인</span></div>
+					        <div class="col2">
+										<input type="password" name="pass_confirm">
+					        </div>                 
+				       	</div>
+				       	<div class="clear"></div>
+
+				       	<div class="form">
+					        <div class="col1"><span>이름</span></div>
+					        <div class="col2">
+										<input type="text" name="name">
+					        </div>                 
+				       	</div>
+				       	<div class="clear"></div>
+
+				       	<div class="form email">
+					        <div class="col1"><span>이메일</span></div>
+					        <div class="col2">
+										<input type="text" name="email1" class="email1" ><span>@</span><input type="text" name="email2" class="email2" >
+					        </div>                 
+				       	</div>
+				       	<div class="clear"></div>
+				       	<div class="bottom_line"> </div>
+				       	<div class="buttons">
+				       			<p onclick="check_input()">저장하기</p>
+				       			<p id="reset_button" onclick="reset_form()">취소하기</p>
+	           		</div>
+			    	</div>
+
+           </form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<footer>
-    	<?php include "footer.php";?>
-    </footer>
+		<?php include "footer.php";?>
+	</footer>
 </body>
 </html>

@@ -21,9 +21,6 @@
 <?php 
     if (!$userid){
     ?>                  
-                    <div class="counter_wrap">
-                        <span id="counter"></span><span class="counter_text1">후</span><br><span class="counter_text2">자동이동</span><input class="counter_button" type="button" value="연장" onclick="counter_reset()">
-                    </div>                 
                     <li title="회원가입화면으로 이동합니다."><a href="member_form.php">회원가입</a></li>
                     <li title="로그인화면으로 이동합니다."><a href="login_form.php">로그인</a></li>   
 

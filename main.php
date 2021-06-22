@@ -289,17 +289,32 @@
                 <div class="library_notice">
                     <h2 class="notice_header">공지사항</h2>
                     <div class="notice_content">
-                        <ul>
-                            <li><a href="#"><span class="child">[어린이]</span>어린이 도서관 온라인 책 읽어주기 행사 운영 안내드립니다. 지원하신분은 공지 필독 부탁드립니다.</a></li>
-                            <li><a href="#"><span class="manan">[만안]</span>2021년 만안도서관 북 시네마 행사 안내 드립니다.참가 희망하시는 분은 공지 필독 부탁드립니다.</a></li>
-                            <li><a href="#"><span class="all">[공통]</span>4.15 (목) 19:00-20:00 안양도서관 홈페이지 정기점검관련하여 안내드립니다.</a></li>
-                            <li><a href="#"><span class="peonychon">[평촌]</span>한국 불교미술의 아름다움 : 한국의 종교와 종교의 해석이 녹아들어가있는 아름다운 작품</a></li>
-                            <li><a href="#"><span class="peonychon">[평촌]</span>범계 스마트 도서관 임시 휴관 안내</a></li>
-                            <li><a href="#"><span class="bacdal">[박달]</span>길 위의 인문학:가족이 함께하는 역사 탐방 여행</a></li>
-                            <li><a href="#"><span class="seoksoo">[석수]</span>문화가 있는 날(매주 마지막주 수요일)</a></li>
-                            <li><a href="#"><span class="seoksoo">[박달]</span>어린이 예비작가를 위한 글쓰기 교실</a></li>
+                       <ul>
+<!-- 최근 게시 글 DB에서 불러오기 -->
+<?php
+    $con = mysqli_connect("localhost", DBuser, DBpass, DBname);
+    $sql = "select * from board order by num desc limit 5";
+    $result = mysqli_query($con, $sql);
+
+    if (!$result)
+        echo "게시판 DB 테이블(board)이 생성 전이거나 아직 게시글이 없습니다!";
+    else
+    {
+        while( $row = mysqli_fetch_array($result) )
+        {
+            $regist_day = substr($row["regist_day"], 0, 10);
+?>
+                            <li>
+                                <span><?=$row["subject"]?></span>
+                                <span><?=$row["name"]?></span>
+                                <span><?=$regist_day?></span>
+                            </li>
+<?php
+        }
+    }
+?>
                         </ul>
-                    </div>
+                   </div>
                 </div>
                 <div class="library_event_slide">
                     <ul>
@@ -974,9 +989,6 @@
         </div>
 
 
-        <div id="main_img_bar">
-            <img src="./img/main_img.png">
-        </div>
         <div id="main_content">
             <div id="latest">
                 <h4>최근 게시글(15Ch)</h4>
