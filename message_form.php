@@ -2,7 +2,8 @@
 <html>
 <head> 
 <meta charset="utf-8">
-<title>PHP 프로그래밍</title>
+<title>안양 시립도서관</title>
+<link rel="shortcut icon" href="images/ico_favicon.png">	
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/message.css">
 <script>

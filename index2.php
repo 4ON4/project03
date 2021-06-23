@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="Generator" content="Notepad++"/>    
     <title>안양시립도서관</title>
+    <link rel="shortcut icon" href="images/ico_favicon.png">        
     <!-- css -->
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/common.css"/>

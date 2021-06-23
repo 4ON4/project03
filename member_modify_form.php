@@ -6,7 +6,7 @@
 	<meta name="Generator" content="Notepad++"/>
 	<meta name="Author" content="박은서"/>
 	<title>안양시립도서관</title>
-
+	<link rel="shortcut icon" href="images/ico_favicon.png">	
 	<!-- css -->
 	<link rel="stylesheet" href="css/common.css"/>
 	<link rel="stylesheet" type="text/css" href="css/member.css">	

@@ -1,25 +1,50 @@
 <!DOCTYPE html>
+<html lang="ko">
 <head>
-<meta charset="utf-8">
-<style>
-h3 {
-   padding-left: 5px;
-   border-left: solid 5px #edbf07;
-}
-#close {
-   margin:20px 0 0 80px;
-   cursor:pointer;
-}
-</style>
+<meta charset="UTF-8">
+   <style>
+   *{margin:0;}
+
+      h3 {
+            width:350px; 
+            height:60px;
+            border-left:10px solid #333333;
+            line-height:60px;
+            font-size:20px;
+            text-indent:10px;
+
+         }        
+      #content{
+               width:350px; 
+               height:106px; 
+               background:#ffffff;
+               border-top:2px dashed #333333;               
+               border-bottom:2px dashed #333333;               
+            }
+      #content ul li{list-style:square; line-height:50px;}
+      #close{
+               width:350px; 
+               height:50px; 
+               background:#ffffff; 
+               cursor:pointer;
+               position:relative;
+            
+            }
+      #close>p{text-align:center; line-height:40px; border-radius:20px; width:150px; height:40px; font-weight:bold; color:#ffffff; background:rgba(157,74,247,1) 100%; position:absolute; left:100px; top:5px;}
+
+   </style>
 </head>
+
 <body>
-<h3>아이디 중복체크</h3>
-<p>
+   <div id="header"></div>
+   <h3>아이디 중복체크</h3>
+   <div id="content">
+      <ul>
 <?php
    define('DBuser','aze624');
    define('DBpass','ay2111!!');
    define('DBname','aze624');
-	
+   
    $id = $_GET["id"];
 
    if(!$id) 
@@ -49,9 +74,9 @@ h3 {
       mysqli_close($con);
    }
 ?>
-</p>
-<div id="close">
-   <img src="./img/close.png" onclick="javascript:self.close()">
-</div>
+      </ul>
+   </div>
+   <div id="close" onclick="javascript:self.close()"><p>닫기</p></div>
+   <div id="bottom"></div> 
 </body>
 </html>

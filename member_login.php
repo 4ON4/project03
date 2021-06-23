@@ -6,6 +6,7 @@
 	<meta name="Generator" content="Notepad++"/>
 	<meta name="Author" content="박은서"/>
 	<title>안양시립도서관</title>
+	<link rel="shortcut icon" href="images/ico_favicon.png">		
 
 	<!-- css -->
 	<link rel="stylesheet" href="css/common.css"/>
@@ -75,27 +76,33 @@
 				</div> <!-- id="left_content" -->
 				<div id="right_content">
 					<div class="login_box">
-						<img src="images/img_login.jpg" alt="로그인을 해주세요"/>
-						<form name="login_form" method="post" action="login.php">
-							<ul class="login_top">
-								<li><input type="text" name="id" placeholder="아이디" ></li>
-								<li><input type="password" id="pass" name="pass" placeholder="비밀번호" ></li>
-							</ul>
-						</form>
-						<ul class="login_bottom">
-							<li class="find"><a href="#">아이디 찾기 <span>|</span></a></li>
-							<li class="find"><a href="#">비밀번호 찾기 <span>|</span></a></li>
-							<li class="find"><a href="member_form.php">회원가입</a></li>
-						</ul>
-						<div class="button">
-							<a href="#" onclick="check_input()">로그인</a>
+						<div class="login_img">
+							<img src="images/img_login.jpg" alt="로그인을 해주세요"/>
 						</div>
-						<div class="imfornation_box">
-							<ul>
-								<li>안양시 통합회원으로 가입한 경우 <span>도서관신규회원등록(새창)</span> 페이지에서 최초 1회 로그인 후 도서관 홈페이지 이용이 가능합니다.</li>
-								<li>로그인이 안되시는 경우 한/영 키와 Caps Lock 키가 눌러져 있지 않은지 확인하세요.</li>
-								<li>계속해서 로그인이 안되시는 경우 관리자에게 문의하시기 바랍니다.</li>
-							</ul>
+						<div class="login_top">
+							<form name="login_form" method="post" action="login.php">
+								<ul class="input">
+									<li class="login"><img src="images/user.png" alt="ID"/><input type="text" name="id" placeholder="아이디" value="admin"></li>
+									<li class="password"><img src="images/lock.png" alt="PW"/><input type="password" id="pass" name="pass" placeholder="비밀번호"  value="1234" /></li>
+									<li class="find"><a href="#">아이디 찾기</a></li>
+									<li class="find"><a href="#">|</a></li>
+									<li class="find"><a href="#">비밀번호 찾기</a></li>
+									<li class="find"><a href="#">|</a></li>
+									<li class="find"><a href="member_form.php">회원가입</a></li>
+								</ul>
+							</form>
+							<div class="button">
+								<button type="button"><a href="#" onclick="check_input()">로그인</a></button>
+							</div>
+						</div>
+						<div class="login_bottom">
+							<div class="imformation_box">
+								<ul>
+									<li>안양시 통합회원으로 가입한 경우 <span>도서관신규회원등록(새창)</span> 페이지에서 최초 1회 로그인 후 <br/>도서관 홈페이지 이용이 가능합니다.</li>
+									<li>로그인이 안되시는 경우 한/영 키와 Caps Lock 키가 눌러져 있지 않은지 확인해주세요.</li>
+									<li>계속해서 로그인이 안되시는 경우 관리자에게 문의하시기 바랍니다.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

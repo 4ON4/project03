@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<meta name="Generator" content="Notepad++"/>	
 	<title>안양시립도서관</title>
+	<link rel="shortcut icon" href="images/ico_favicon.png">		
 	<!-- css -->
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/common.css"/>
@@ -35,7 +36,7 @@
 		cnt--;
 		if(cnt < 0) {
 			clearInterval(tid);
-			self.location = "member_form.php";
+			self.location = "member_login.php";
 		}
 	}
 	function time_format(s) {
@@ -66,13 +67,13 @@
 		<div class="inquire_top"><a href="message_form.php"><img src="images/message.png" alt="문의바로가기"/></a></div>
 		<div class="inquire_bottom"><p>문의함 바로가기</p></div>
 	</div>	
-	<header>
+	<header id="header">
 		<?php include "header.php";?>
 	</header>
-	<section>
+	<section id="section">
 		<?php include "main.php";?>
 	</section> 
-	<footer>
+	<footer id="footer">
 		<?php include "footer.php";?>
 	</footer>
 </body>

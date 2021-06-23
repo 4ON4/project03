@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-	<meta name="Generator" content="Notepad++"/>	
+	<meta name="Generator" content="Notepad++"/>
 	<title>안양시립도서관</title>
+	<link rel="shortcut icon" href="images/ico_favicon.png">	
 	<!-- css -->
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style2.css"/>
 	<!-- jquery -->
     <script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.easing.1.3.min.js"></script>
@@ -18,7 +19,7 @@
 	<script src="js/gray.js"></script>
     <script>
 	window.open("images/imformation.png", "", "resizable=no, toolbar=no, width=400, height=400")
-    </script>	
+    </script>
 	<script>
 	var tid;
 	var cnt = parseInt(20);//초기값(초단위)
@@ -52,7 +53,7 @@
 				nHour = parseInt(nMin/60);
 				nMin = nMin%60;
 			}
-		} 
+		}
 		if(nSec<10) nSec = "0"+nSec;
 		if(nMin<10) nMin = "0"+nMin;
 
@@ -67,377 +68,376 @@
 	<!-- <div class="weather"></div> -->
 	<!-- 헤더 -->
 	<header>
-		<!-- 헤더윗부분 -->
-		<div id="headerGnb" class="cf">
-			<div class="headerlibrary_gnb">
-				<div class="counter_wrap">
-					<span id="counter"></span><span class="counter_text1">후</span><br><span class="counter_text2">자동로그아웃</span><input class="counter_button" type="button" value="연장" onclick="counter_reset()">
-				</div>
-				<ul>
-					<li title="회원가입화면으로 이동합니다."><a href="#">회원가입</a></li>
-					<li title="안양시립도서관 사이트맵으로 이동합니다."><a href="https://lib.anyang.go.kr/intro/siteMap.do">사이트맵</a></li>
-					<li title="로그인화면으로 이동합니다."><a href="#">로그아웃</a></li>	
-				</ul>
-			</div>	
-		</div> <!-- 헤더 윗부분 -->
-		<!-- 헤더아랫부분 -->
-		<div id="library_main_menu" class="cf">
-			<div class="main_contents">
-				<h1 class="hidden">안양시립도서관</h1>
-				<div class="library_logo"><img src="images/logo.png" alt="도서관로고"/></div>
-				<div class="main_menu_wrap">
-					<!-- 메뉴랩 -->
-					<div class="library_menu_wrap">
-						<ul class="oneInner">
-							<li class="oneDepth" title="도서관 자료검색 메뉴입니다."><a href="sub1/sub1.html">도서관자료검색</a>
-								<div class="twoInner">
-									<div class="twoDepth">
-										<div class="sub_blank_box"></div>
-										<ul class="sub_box1">
-											<li><a href="#">도서관소장자료검색</a></li>
-											<li><a href="#">도서주제별검색</a></li>
-											<li><a href="#">신착자료검색</a></li>
-											<li><a href="#">정기간행물검색</a></li>
-											<li><a href="#">비치희망도서신청</a></li>
-										</ul>								
-										<ul class="sub_box2">
-											<li><a href="#">사서추천도서</a></li>
-											<li><a href="#">도서관대출베스트</a></li>
-											<li><a href="#">원문/학술정보</a></li>
-											<li><a href="#">향토자료</a></li>
-											<li><a href="#">공공도서관인기도서</a></li>
-										</ul>								
-										<ul class="sub_box3">
-											<li><a href="#">문화행사신청</a></li>
-											<li><a href="#">설문조사</a></li>
-											<li><a href="#">독서마라톤</a></li>
-											<li><a href="#">도서관영화상영</a></li>
-											<li><a href="#">스마트영어도서관</a></li>
-											<li><a href="#">북스타트</a></li>
-											<li><a href="#">독서동아리활동</a></li>
-										</ul>								
-										<ul class="sub_box4">
-											<li><a href="#">도서관이용안내</a></li>
-											<li><a href="#">도서실이용소식</a></li>
-											<li><a href="#">자주하는질문</a></li>
-											<li><a href="#">상호대차</a></li>
-											<li><a href="#">책배달서비스</a></li>					
-											<li><a href="#">모바일앱</a></li>
-											<li><a href="#">스마트도서관</a></li>
-											<li><a href="#">전자도서관</a></li>
-										</ul>								
-										<ul class="sub_box5">
-											<li><a href="#">인사말</a></li>
-											<li><a href="#">안양시도서관안내</a></li>
-											<li><a href="#">도서관연혁</a></li>
-											<li><a href="#">도서관자료현황</a></li>
-											<li><a href="#">도서관내조직도</a></li>
-											<li><a href="#">도서관련법규</a></li>
-										</ul>								
-										<ul class="sub_box6">
-											<li><a href="#">나의 정보</a></li>
-											<li><a href="#">도서이용내역</a></li>
-											<li><a href="#">안심도서대출</a></li>
-											<li><a href="#">상호대차조회</a></li>
-											<li><a href="#">관심도서목록</a></li>
-											<li><a href="#">추천도서목록</a></li>
-											<li><a href="#">문학행사신청조회</a></li>
-										</ul>								
-									</div>
-								</div>							
-							</li>
-							<li class="oneDepth"><a href="sub2/sub2.html">도서정보</a>
-								<div class="twoInner">
-									<div class="twoDepth">
-										<div class="sub_blank_box"></div>
-										<ul class="sub_box1">
-											<li><a href="#">도서관소장자료검색</a></li>
-											<li><a href="#">도서주제별검색</a></li>
-											<li><a href="#">신착자료검색</a></li>
-											<li><a href="#">정기간행물검색</a></li>
-											<li><a href="#">비치희망도서신청</a></li>
-										</ul>								
-										<ul class="sub_box2">
-											<li><a href="#">사서추천도서</a></li>
-											<li><a href="#">도서관대출베스트</a></li>
-											<li><a href="#">원문/학술정보</a></li>
-											<li><a href="#">향토자료</a></li>
-											<li><a href="#">공공도서관인기도서</a></li>
-										</ul>								
-										<ul class="sub_box3">
-											<li><a href="#">문화행사신청</a></li>
-											<li><a href="#">설문조사</a></li>
-											<li><a href="#">독서마라톤</a></li>
-											<li><a href="#">도서관영화상영</a></li>
-											<li><a href="#">스마트영어도서관</a></li>
-											<li><a href="#">북스타트</a></li>
-											<li><a href="#">독서동아리활동</a></li>
-										</ul>								
-										<ul class="sub_box4">
-											<li><a href="#">도서관이용안내</a></li>
-											<li><a href="#">도서실이용소식</a></li>
-											<li><a href="#">자주하는질문</a></li>
-											<li><a href="#">상호대차</a></li>
-											<li><a href="#">책배달서비스</a></li>					
-											<li><a href="#">모바일앱</a></li>
-											<li><a href="#">스마트도서관</a></li>
-											<li><a href="#">전자도서관</a></li>
-										</ul>								
-										<ul class="sub_box5">
-											<li><a href="#">인사말</a></li>
-											<li><a href="#">안양시도서관안내</a></li>
-											<li><a href="#">도서관연혁</a></li>
-											<li><a href="#">도서관자료현황</a></li>
-											<li><a href="#">도서관내조직도</a></li>
-											<li><a href="#">도서관련법규</a></li>
-										</ul>								
-										<ul class="sub_box6">
-											<li><a href="#">나의 정보</a></li>
-											<li><a href="#">도서이용내역</a></li>
-											<li><a href="#">안심도서대출</a></li>
-											<li><a href="#">상호대차조회</a></li>
-											<li><a href="#">관심도서목록</a></li>
-											<li><a href="#">추천도서목록</a></li>
-											<li><a href="#">문학행사신청조회</a></li>
-										</ul>								
-									</div>
-								</div>							
-							</li>
-							<li class="oneDepth"><a href="sub3/sub3.html">문화행사/참여</a>
-								<div class="twoInner">
-									<div class="twoDepth">
-										<div class="sub_blank_box"></div>
-										<ul class="sub_box1">
-											<li><a href="#">도서관소장자료검색</a></li>
-											<li><a href="#">도서주제별검색</a></li>
-											<li><a href="#">신착자료검색</a></li>
-											<li><a href="#">정기간행물검색</a></li>
-											<li><a href="#">비치희망도서신청</a></li>
-										</ul>								
-										<ul class="sub_box2">
-											<li><a href="#">사서추천도서</a></li>
-											<li><a href="#">도서관대출베스트</a></li>
-											<li><a href="#">원문/학술정보</a></li>
-											<li><a href="#">향토자료</a></li>
-											<li><a href="#">공공도서관인기도서</a></li>
-										</ul>								
-										<ul class="sub_box3">
-											<li><a href="#">문화행사신청</a></li>
-											<li><a href="#">설문조사</a></li>
-											<li><a href="#">독서마라톤</a></li>
-											<li><a href="#">도서관영화상영</a></li>
-											<li><a href="#">스마트영어도서관</a></li>
-											<li><a href="#">북스타트</a></li>
-											<li><a href="#">독서동아리활동</a></li>
-										</ul>								
-										<ul class="sub_box4">
-											<li><a href="#">도서관이용안내</a></li>
-											<li><a href="#">도서실이용소식</a></li>
-											<li><a href="#">자주하는질문</a></li>
-											<li><a href="#">상호대차</a></li>
-											<li><a href="#">책배달서비스</a></li>					
-											<li><a href="#">모바일앱</a></li>
-											<li><a href="#">스마트도서관</a></li>
-											<li><a href="#">전자도서관</a></li>
-										</ul>								
-										<ul class="sub_box5">
-											<li><a href="#">인사말</a></li>
-											<li><a href="#">안양시도서관안내</a></li>
-											<li><a href="#">도서관연혁</a></li>
-											<li><a href="#">도서관자료현황</a></li>
-											<li><a href="#">도서관내조직도</a></li>
-											<li><a href="#">도서관련법규</a></li>
-										</ul>								
-										<ul class="sub_box6">
-											<li><a href="#">나의 정보</a></li>
-											<li><a href="#">도서이용내역</a></li>
-											<li><a href="#">안심도서대출</a></li>
-											<li><a href="#">상호대차조회</a></li>
-											<li><a href="#">관심도서목록</a></li>
-											<li><a href="#">추천도서목록</a></li>
-											<li><a href="#">문학행사신청조회</a></li>
-										</ul>								
-									</div>
-								</div>							
-							</li>
-							<li class="oneDepth"><a href="sub4/sub4.html">이용안내</a>
-								<div class="twoInner">
-									<div class="twoDepth">
-										<div class="sub_blank_box"></div>
-										<ul class="sub_box1">
-											<li><a href="#">도서관소장자료검색</a></li>
-											<li><a href="#">도서주제별검색</a></li>
-											<li><a href="#">신착자료검색</a></li>
-											<li><a href="#">정기간행물검색</a></li>
-											<li><a href="#">비치희망도서신청</a></li>
-										</ul>								
-										<ul class="sub_box2">
-											<li><a href="#">사서추천도서</a></li>
-											<li><a href="#">도서관대출베스트</a></li>
-											<li><a href="#">원문/학술정보</a></li>
-											<li><a href="#">향토자료</a></li>
-											<li><a href="#">공공도서관인기도서</a></li>
-										</ul>								
-										<ul class="sub_box3">
-											<li><a href="#">문화행사신청</a></li>
-											<li><a href="#">설문조사</a></li>
-											<li><a href="#">독서마라톤</a></li>
-											<li><a href="#">도서관영화상영</a></li>
-											<li><a href="#">스마트영어도서관</a></li>
-											<li><a href="#">북스타트</a></li>
-											<li><a href="#">독서동아리활동</a></li>
-										</ul>								
-										<ul class="sub_box4">
-											<li><a href="#">도서관이용안내</a></li>
-											<li><a href="#">도서실이용소식</a></li>
-											<li><a href="#">자주하는질문</a></li>
-											<li><a href="#">상호대차</a></li>
-											<li><a href="#">책배달서비스</a></li>					
-											<li><a href="#">모바일앱</a></li>
-											<li><a href="#">스마트도서관</a></li>
-											<li><a href="#">전자도서관</a></li>
-										</ul>								
-										<ul class="sub_box5">
-											<li><a href="#">인사말</a></li>
-											<li><a href="#">안양시도서관안내</a></li>
-											<li><a href="#">도서관연혁</a></li>
-											<li><a href="#">도서관자료현황</a></li>
-											<li><a href="#">도서관내조직도</a></li>
-											<li><a href="#">도서관련법규</a></li>
-										</ul>								
-										<ul class="sub_box6">
-											<li><a href="#">나의 정보</a></li>
-											<li><a href="#">도서이용내역</a></li>
-											<li><a href="#">안심도서대출</a></li>
-											<li><a href="#">상호대차조회</a></li>
-											<li><a href="#">관심도서목록</a></li>
-											<li><a href="#">추천도서목록</a></li>
-											<li><a href="#">문학행사신청조회</a></li>
-										</ul>								
-									</div>
-								</div>							
-							</li>
-							<li class="oneDepth"><a href="sub5/sub5.html">도서관소개</a>
-								<div class="twoInner">
-									<div class="twoDepth">
-										<div class="sub_blank_box"></div>
-										<ul class="sub_box1">
-											<li><a href="#">도서관소장자료검색</a></li>
-											<li><a href="#">도서주제별검색</a></li>
-											<li><a href="#">신착자료검색</a></li>
-											<li><a href="#">정기간행물검색</a></li>
-											<li><a href="#">비치희망도서신청</a></li>
-										</ul>								
-										<ul class="sub_box2">
-											<li><a href="#">사서추천도서</a></li>
-											<li><a href="#">도서관대출베스트</a></li>
-											<li><a href="#">원문/학술정보</a></li>
-											<li><a href="#">향토자료</a></li>
-											<li><a href="#">공공도서관인기도서</a></li>
-										</ul>								
-										<ul class="sub_box3">
-											<li><a href="#">문화행사신청</a></li>
-											<li><a href="#">설문조사</a></li>
-											<li><a href="#">독서마라톤</a></li>
-											<li><a href="#">도서관영화상영</a></li>
-											<li><a href="#">스마트영어도서관</a></li>
-											<li><a href="#">북스타트</a></li>
-											<li><a href="#">독서동아리활동</a></li>
-										</ul>								
-										<ul class="sub_box4">
-											<li><a href="#">도서관이용안내</a></li>
-											<li><a href="#">도서실이용소식</a></li>
-											<li><a href="#">자주하는질문</a></li>
-											<li><a href="#">상호대차</a></li>
-											<li><a href="#">책배달서비스</a></li>					
-											<li><a href="#">모바일앱</a></li>
-											<li><a href="#">스마트도서관</a></li>
-											<li><a href="#">전자도서관</a></li>
-										</ul>								
-										<ul class="sub_box5">
-											<li><a href="#">인사말</a></li>
-											<li><a href="#">안양시도서관안내</a></li>
-											<li><a href="#">도서관연혁</a></li>
-											<li><a href="#">도서관자료현황</a></li>
-											<li><a href="#">도서관내조직도</a></li>
-											<li><a href="#">도서관련법규</a></li>
-										</ul>								
-										<ul class="sub_box6">
-											<li><a href="#">나의 정보</a></li>
-											<li><a href="#">도서이용내역</a></li>
-											<li><a href="#">안심도서대출</a></li>
-											<li><a href="#">상호대차조회</a></li>
-											<li><a href="#">관심도서목록</a></li>
-											<li><a href="#">추천도서목록</a></li>
-											<li><a href="#">문학행사신청조회</a></li>
-										</ul>								
-									</div>
-								</div>							
-							</li>
-							<li class="oneDepth"><a href="sub6/sub6.html">마이페이지</a>
-								<div class="twoInner">
-									<div class="twoDepth">
-										<div class="sub_blank_box"></div>
-										<ul class="sub_box1">
-											<li><a href="#">도서관소장자료검색</a></li>
-											<li><a href="#">도서주제별검색</a></li>
-											<li><a href="#">신착자료검색</a></li>
-											<li><a href="#">정기간행물검색</a></li>
-											<li><a href="#">비치희망도서신청</a></li>
-										</ul>								
-										<ul class="sub_box2">
-											<li><a href="#">사서추천도서</a></li>
-											<li><a href="#">도서관대출베스트</a></li>
-											<li><a href="#">원문/학술정보</a></li>
-											<li><a href="#">향토자료</a></li>
-											<li><a href="#">공공도서관인기도서</a></li>
-										</ul>								
-										<ul class="sub_box3">
-											<li><a href="#">문화행사신청</a></li>
-											<li><a href="#">설문조사</a></li>
-											<li><a href="#">독서마라톤</a></li>
-											<li><a href="#">도서관영화상영</a></li>
-											<li><a href="#">스마트영어도서관</a></li>
-											<li><a href="#">북스타트</a></li>
-											<li><a href="#">독서동아리활동</a></li>
-										</ul>								
-										<ul class="sub_box4">
-											<li><a href="#">도서관이용안내</a></li>
-											<li><a href="#">도서실이용소식</a></li>
-											<li><a href="#">자주하는질문</a></li>
-											<li><a href="#">상호대차</a></li>
-											<li><a href="#">책배달서비스</a></li>					
-											<li><a href="#">모바일앱</a></li>
-											<li><a href="#">스마트도서관</a></li>
-											<li><a href="#">전자도서관</a></li>
-										</ul>								
-										<ul class="sub_box5">
-											<li><a href="#">인사말</a></li>
-											<li><a href="#">안양시도서관안내</a></li>
-											<li><a href="#">도서관연혁</a></li>
-											<li><a href="#">도서관자료현황</a></li>
-											<li><a href="#">도서관내조직도</a></li>
-											<li><a href="#">도서관련법규</a></li>
-										</ul>								
-										<ul class="sub_box6">
-											<li><a href="#">나의 정보</a></li>
-											<li><a href="#">도서이용내역</a></li>
-											<li><a href="#">안심도서대출</a></li>
-											<li><a href="#">상호대차조회</a></li>
-											<li><a href="#">관심도서목록</a></li>
-											<li><a href="#">추천도서목록</a></li>
-											<li><a href="#">문학행사신청조회</a></li>
-										</ul>								
-									</div>
-								</div>							
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>		
-		</div> <!-- 헤더아랫부분 -->
-		
-
+        <!-- 헤더윗부분 -->
+        <div id="header_top" class="cf">
+            <div id="header_gnb">
+                <ul class="gnb_menu">
+                    <div class="counter_wrap">
+                        <span id="counter"></span><span class="counter_text1">후</span><br><span class="counter_text2">자동이동</span><input class="counter_button" type="button" value="연장" onclick="counter_reset()">
+                    </div>
+                    <li title="회원가입화면으로 이동합니다."><a href="member_form.php">회원가입</a></li>
+                    <li title="로그인화면으로 이동합니다."><a href="member_login.php">로그인</a></li>
+                    <li title="로그아웃 됩니다."><a href="logout.php">로그아웃</a></li>
+                    <li><a href="member_modify_form.php">정보 수정</a></li>
+                    <li><a href="admin.php">관리자 모드</a></li>
+                    <li title="안양시립도서관 사이트맵으로 이동합니다."><a href="https://lib.anyang.go.kr/intro/siteMap.do">사이트맵</a></li>
+                </ul>
+            </div>
+        </div> <!-- id="header_top" -->
+        <div id="header_bottom" class="cf">
+            <div id="main_move_wrap">
+                <h1 class="hidden">안양시립도서관</h1>
+                <div class="library_logo">
+                    <a href="index.php"><img src="images/logo.png" alt="도서관로고"/></a>
+                </div> <!-- class="library_logo" -->
+                <div id="main_move">
+                    <ul class="oneinner">
+                        <li class="onedepth"><a href="sub1/sub1.html">도서관자료검색</a>
+                            <div class="twoinner">
+                                <div class="twodepth">
+                                    <div class="sub_blank_box"></div>
+                                    <ul class="sub_box1">
+                                        <li><a href="#">도서관소장자료검색</a></li>
+                                        <li><a href="#">도서주제별검색</a></li>
+                                        <li><a href="#">신착자료검색</a></li>
+                                        <li><a href="#">정기간행물검색</a></li>
+                                        <li><a href="#">비치희망도서신청</a></li>
+                                    </ul>
+                                    <ul class="sub_box2">
+                                        <li><a href="#">사서추천도서</a></li>
+                                        <li><a href="#">도서관대출베스트</a></li>
+                                        <li><a href="#">원문/학술정보</a></li>
+                                        <li><a href="#">향토자료</a></li>
+                                        <li><a href="#">공공도서관인기도서</a></li>
+                                    </ul>
+                                    <ul class="sub_box3">
+                                        <li><a href="#">문화행사신청</a></li>
+                                        <li><a href="#">설문조사</a></li>
+                                        <li><a href="#">독서마라톤</a></li>
+                                        <li><a href="#">도서관영화상영</a></li>
+                                        <li><a href="#">스마트영어도서관</a></li>
+                                        <li><a href="#">북스타트</a></li>
+                                        <li><a href="#">독서동아리활동</a></li>
+                                    </ul>
+                                    <ul class="sub_box4">
+                                        <li><a href="#">도서관이용안내</a></li>
+                                        <li><a href="#">도서실이용소식</a></li>
+                                        <li><a href="#">자주하는질문</a></li>
+                                        <li><a href="#">상호대차</a></li>
+                                        <li><a href="#">책배달서비스</a></li>
+                                        <li><a href="#">모바일앱</a></li>
+                                        <li><a href="#">스마트도서관</a></li>
+                                        <li><a href="#">전자도서관</a></li>
+                                    </ul>
+                                    <ul class="sub_box5">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">안양시도서관안내</a></li>
+                                        <li><a href="#">도서관연혁</a></li>
+                                        <li><a href="#">도서관자료현황</a></li>
+                                        <li><a href="#">도서관내조직도</a></li>
+                                        <li><a href="#">도서관련법규</a></li>
+                                    </ul>
+                                    <ul class="sub_box6">
+                                        <li><a href="#">나의 정보</a></li>
+                                        <li><a href="#">도서이용내역</a></li>
+                                        <li><a href="#">안심도서대출</a></li>
+                                        <li><a href="#">상호대차조회</a></li>
+                                        <li><a href="#">관심도서목록</a></li>
+                                        <li><a href="#">추천도서목록</a></li>
+                                        <li><a href="#">문학행사신청조회</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="onedepth"><a href="sub2/sub2.html">도서정보</a>
+                            <div class="twoinner">
+                                <div class="twodepth">
+                                    <div class="sub_blank_box"></div>
+                                    <ul class="sub_box1">
+                                        <li><a href="#">도서관소장자료검색</a></li>
+                                        <li><a href="#">도서주제별검색</a></li>
+                                        <li><a href="#">신착자료검색</a></li>
+                                        <li><a href="#">정기간행물검색</a></li>
+                                        <li><a href="#">비치희망도서신청</a></li>
+                                    </ul>
+                                    <ul class="sub_box2">
+                                        <li><a href="#">사서추천도서</a></li>
+                                        <li><a href="#">도서관대출베스트</a></li>
+                                        <li><a href="#">원문/학술정보</a></li>
+                                        <li><a href="#">향토자료</a></li>
+                                        <li><a href="#">공공도서관인기도서</a></li>
+                                    </ul>
+                                    <ul class="sub_box3">
+                                        <li><a href="#">문화행사신청</a></li>
+                                        <li><a href="#">설문조사</a></li>
+                                        <li><a href="#">독서마라톤</a></li>
+                                        <li><a href="#">도서관영화상영</a></li>
+                                        <li><a href="#">스마트영어도서관</a></li>
+                                        <li><a href="#">북스타트</a></li>
+                                        <li><a href="#">독서동아리활동</a></li>
+                                    </ul>
+                                    <ul class="sub_box4">
+                                        <li><a href="#">도서관이용안내</a></li>
+                                        <li><a href="#">도서실이용소식</a></li>
+                                        <li><a href="#">자주하는질문</a></li>
+                                        <li><a href="#">상호대차</a></li>
+                                        <li><a href="#">책배달서비스</a></li>
+                                        <li><a href="#">모바일앱</a></li>
+                                        <li><a href="#">스마트도서관</a></li>
+                                        <li><a href="#">전자도서관</a></li>
+                                    </ul>
+                                    <ul class="sub_box5">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">안양시도서관안내</a></li>
+                                        <li><a href="#">도서관연혁</a></li>
+                                        <li><a href="#">도서관자료현황</a></li>
+                                        <li><a href="#">도서관내조직도</a></li>
+                                        <li><a href="#">도서관련법규</a></li>
+                                    </ul>
+                                    <ul class="sub_box6">
+                                        <li><a href="#">나의 정보</a></li>
+                                        <li><a href="#">도서이용내역</a></li>
+                                        <li><a href="#">안심도서대출</a></li>
+                                        <li><a href="#">상호대차조회</a></li>
+                                        <li><a href="#">관심도서목록</a></li>
+                                        <li><a href="#">추천도서목록</a></li>
+                                        <li><a href="#">문학행사신청조회</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="onedepth"><a href="sub3/sub3.html">문화행사/참여</a>
+                            <div class="twoinner">
+                                <div class="twodepth">
+                                    <div class="sub_blank_box"></div>
+                                    <ul class="sub_box1">
+                                        <li><a href="#">도서관소장자료검색</a></li>
+                                        <li><a href="#">도서주제별검색</a></li>
+                                        <li><a href="#">신착자료검색</a></li>
+                                        <li><a href="#">정기간행물검색</a></li>
+                                        <li><a href="#">비치희망도서신청</a></li>
+                                    </ul>
+                                    <ul class="sub_box2">
+                                        <li><a href="#">사서추천도서</a></li>
+                                        <li><a href="#">도서관대출베스트</a></li>
+                                        <li><a href="#">원문/학술정보</a></li>
+                                        <li><a href="#">향토자료</a></li>
+                                        <li><a href="#">공공도서관인기도서</a></li>
+                                    </ul>
+                                    <ul class="sub_box3">
+                                        <li><a href="#">문화행사신청</a></li>
+                                        <li><a href="#">설문조사</a></li>
+                                        <li><a href="#">독서마라톤</a></li>
+                                        <li><a href="#">도서관영화상영</a></li>
+                                        <li><a href="#">스마트영어도서관</a></li>
+                                        <li><a href="#">북스타트</a></li>
+                                        <li><a href="#">독서동아리활동</a></li>
+                                    </ul>
+                                    <ul class="sub_box4">
+                                        <li><a href="#">도서관이용안내</a></li>
+                                        <li><a href="#">도서실이용소식</a></li>
+                                        <li><a href="#">자주하는질문</a></li>
+                                        <li><a href="#">상호대차</a></li>
+                                        <li><a href="#">책배달서비스</a></li>
+                                        <li><a href="#">모바일앱</a></li>
+                                        <li><a href="#">스마트도서관</a></li>
+                                        <li><a href="#">전자도서관</a></li>
+                                    </ul>
+                                    <ul class="sub_box5">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">안양시도서관안내</a></li>
+                                        <li><a href="#">도서관연혁</a></li>
+                                        <li><a href="#">도서관자료현황</a></li>
+                                        <li><a href="#">도서관내조직도</a></li>
+                                        <li><a href="#">도서관련법규</a></li>
+                                    </ul>
+                                    <ul class="sub_box6">
+                                        <li><a href="#">나의 정보</a></li>
+                                        <li><a href="#">도서이용내역</a></li>
+                                        <li><a href="#">안심도서대출</a></li>
+                                        <li><a href="#">상호대차조회</a></li>
+                                        <li><a href="#">관심도서목록</a></li>
+                                        <li><a href="#">추천도서목록</a></li>
+                                        <li><a href="#">문학행사신청조회</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="onedepth"><a href="sub4/sub4.html">이용안내</a>
+                            <div class="twoinner">
+                                <div class="twodepth">
+                                    <div class="sub_blank_box"></div>
+                                    <ul class="sub_box1">
+                                        <li><a href="#">도서관소장자료검색</a></li>
+                                        <li><a href="#">도서주제별검색</a></li>
+                                        <li><a href="#">신착자료검색</a></li>
+                                        <li><a href="#">정기간행물검색</a></li>
+                                        <li><a href="#">비치희망도서신청</a></li>
+                                    </ul>
+                                    <ul class="sub_box2">
+                                        <li><a href="#">사서추천도서</a></li>
+                                        <li><a href="#">도서관대출베스트</a></li>
+                                        <li><a href="#">원문/학술정보</a></li>
+                                        <li><a href="#">향토자료</a></li>
+                                        <li><a href="#">공공도서관인기도서</a></li>
+                                    </ul>
+                                    <ul class="sub_box3">
+                                        <li><a href="#">문화행사신청</a></li>
+                                        <li><a href="#">설문조사</a></li>
+                                        <li><a href="#">독서마라톤</a></li>
+                                        <li><a href="#">도서관영화상영</a></li>
+                                        <li><a href="#">스마트영어도서관</a></li>
+                                        <li><a href="#">북스타트</a></li>
+                                        <li><a href="#">독서동아리활동</a></li>
+                                    </ul>
+                                    <ul class="sub_box4">
+                                        <li><a href="#">도서관이용안내</a></li>
+                                        <li><a href="#">도서실이용소식</a></li>
+                                        <li><a href="#">자주하는질문</a></li>
+                                        <li><a href="#">상호대차</a></li>
+                                        <li><a href="#">책배달서비스</a></li>
+                                        <li><a href="#">모바일앱</a></li>
+                                        <li><a href="#">스마트도서관</a></li>
+                                        <li><a href="#">전자도서관</a></li>
+                                    </ul>
+                                    <ul class="sub_box5">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">안양시도서관안내</a></li>
+                                        <li><a href="#">도서관연혁</a></li>
+                                        <li><a href="#">도서관자료현황</a></li>
+                                        <li><a href="#">도서관내조직도</a></li>
+                                        <li><a href="#">도서관련법규</a></li>
+                                    </ul>
+                                    <ul class="sub_box6">
+                                        <li><a href="#">나의 정보</a></li>
+                                        <li><a href="#">도서이용내역</a></li>
+                                        <li><a href="#">안심도서대출</a></li>
+                                        <li><a href="#">상호대차조회</a></li>
+                                        <li><a href="#">관심도서목록</a></li>
+                                        <li><a href="#">추천도서목록</a></li>
+                                        <li><a href="#">문학행사신청조회</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="onedepth"><a href="sub5/sub5.html">도서관소개</a>
+                            <div class="twoinner">
+                                <div class="twodepth">
+                                    <div class="sub_blank_box"></div>
+                                    <ul class="sub_box1">
+                                        <li><a href="#">도서관소장자료검색</a></li>
+                                        <li><a href="#">도서주제별검색</a></li>
+                                        <li><a href="#">신착자료검색</a></li>
+                                        <li><a href="#">정기간행물검색</a></li>
+                                        <li><a href="#">비치희망도서신청</a></li>
+                                    </ul>
+                                    <ul class="sub_box2">
+                                        <li><a href="#">사서추천도서</a></li>
+                                        <li><a href="#">도서관대출베스트</a></li>
+                                        <li><a href="#">원문/학술정보</a></li>
+                                        <li><a href="#">향토자료</a></li>
+                                        <li><a href="#">공공도서관인기도서</a></li>
+                                    </ul>
+                                    <ul class="sub_box3">
+                                        <li><a href="#">문화행사신청</a></li>
+                                        <li><a href="#">설문조사</a></li>
+                                        <li><a href="#">독서마라톤</a></li>
+                                        <li><a href="#">도서관영화상영</a></li>
+                                        <li><a href="#">스마트영어도서관</a></li>
+                                        <li><a href="#">북스타트</a></li>
+                                        <li><a href="#">독서동아리활동</a></li>
+                                    </ul>
+                                    <ul class="sub_box4">
+                                        <li><a href="#">도서관이용안내</a></li>
+                                        <li><a href="#">도서실이용소식</a></li>
+                                        <li><a href="#">자주하는질문</a></li>
+                                        <li><a href="#">상호대차</a></li>
+                                        <li><a href="#">책배달서비스</a></li>
+                                        <li><a href="#">모바일앱</a></li>
+                                        <li><a href="#">스마트도서관</a></li>
+                                        <li><a href="#">전자도서관</a></li>
+                                    </ul>
+                                    <ul class="sub_box5">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">안양시도서관안내</a></li>
+                                        <li><a href="#">도서관연혁</a></li>
+                                        <li><a href="#">도서관자료현황</a></li>
+                                        <li><a href="#">도서관내조직도</a></li>
+                                        <li><a href="#">도서관련법규</a></li>
+                                    </ul>
+                                    <ul class="sub_box6">
+                                        <li><a href="#">나의 정보</a></li>
+                                        <li><a href="#">도서이용내역</a></li>
+                                        <li><a href="#">안심도서대출</a></li>
+                                        <li><a href="#">상호대차조회</a></li>
+                                        <li><a href="#">관심도서목록</a></li>
+                                        <li><a href="#">추천도서목록</a></li>
+                                        <li><a href="#">문학행사신청조회</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="onedepth"><a href="sub6/sub6.html">마이페이지</a>
+                            <div class="twoinner">
+                                <div class="twodepth">
+                                    <div class="sub_blank_box"></div>
+                                    <ul class="sub_box1">
+                                        <li><a href="#">도서관소장자료검색</a></li>
+                                        <li><a href="#">도서주제별검색</a></li>
+                                        <li><a href="#">신착자료검색</a></li>
+                                        <li><a href="#">정기간행물검색</a></li>
+                                        <li><a href="#">비치희망도서신청</a></li>
+                                    </ul>
+                                    <ul class="sub_box2">
+                                        <li><a href="#">사서추천도서</a></li>
+                                        <li><a href="#">도서관대출베스트</a></li>
+                                        <li><a href="#">원문/학술정보</a></li>
+                                        <li><a href="#">향토자료</a></li>
+                                        <li><a href="#">공공도서관인기도서</a></li>
+                                    </ul>
+                                    <ul class="sub_box3">
+                                        <li><a href="#">문화행사신청</a></li>
+                                        <li><a href="#">설문조사</a></li>
+                                        <li><a href="#">독서마라톤</a></li>
+                                        <li><a href="#">도서관영화상영</a></li>
+                                        <li><a href="#">스마트영어도서관</a></li>
+                                        <li><a href="#">북스타트</a></li>
+                                        <li><a href="#">독서동아리활동</a></li>
+                                    </ul>
+                                    <ul class="sub_box4">
+                                        <li><a href="#">도서관이용안내</a></li>
+                                        <li><a href="#">도서실이용소식</a></li>
+                                        <li><a href="#">자주하는질문</a></li>
+                                        <li><a href="#">상호대차</a></li>
+                                        <li><a href="#">책배달서비스</a></li>
+                                        <li><a href="#">모바일앱</a></li>
+                                        <li><a href="#">스마트도서관</a></li>
+                                        <li><a href="#">전자도서관</a></li>
+                                    </ul>
+                                    <ul class="sub_box5">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">안양시도서관안내</a></li>
+                                        <li><a href="#">도서관연혁</a></li>
+                                        <li><a href="#">도서관자료현황</a></li>
+                                        <li><a href="#">도서관내조직도</a></li>
+                                        <li><a href="#">도서관련법규</a></li>
+                                    </ul>
+                                    <ul class="sub_box6">
+                                        <li><a href="#">나의 정보</a></li>
+                                        <li><a href="#">도서이용내역</a></li>
+                                        <li><a href="#">안심도서대출</a></li>
+                                        <li><a href="#">상호대차조회</a></li>
+                                        <li><a href="#">관심도서목록</a></li>
+                                        <li><a href="#">추천도서목록</a></li>
+                                        <li><a href="#">문학행사신청조회</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- id="main_move" -->
+            </div>
+        </div> <!-- id="header_bottom" -->
 	</header>
 
 
@@ -450,9 +450,9 @@
 					<div class="search_box1">
 						<input type="radio" name="mainSearch" id="bookSearch" value="book" checked="checked"/>
 						<label for="bookSearch"><span>소장자료</span></label>
-						
+
 						<input type="radio" name="mainSearch" id="homeSearch" value="book"/>
-						<label for="homeSearch"><span>도서관 내 검색</span></label>						
+						<label for="homeSearch"><span>도서관 내 검색</span></label>
 					</div>
 					<div class="search_box2">
 					<input type="text" name="search_bar" id="search_bar" placeholder="검색어를 입력해주세요"/>
@@ -460,9 +460,9 @@
 					<div class="search_box3"><span class="button">검색</span></div>
 					<div id="library_search_icon">
 						<img src="images/search_icon.png" alt="서치 아이콘"/>
-					</div>					
+					</div>
 				</div>
-				
+
 			</div>
 
 			<div class="slide_pic_box">
@@ -472,19 +472,19 @@
 					<li><a href="#"><img src="images/main_slide/backImg3.jpg" alt="이미지슬라이드3"/></a></li>
 
 				</ul>
-			</div>	
+			</div>
 		</div>
 		<div id="sectionwrap" class="cf">
 			<div id="content1">
 				<div class="libray_middle_menu">
 					<div class="middle_menu_box">
 						<ul class="menu_box">
-							<li><a href="#"><img src="images/icosummaryMain1_show.png" alt=""/>도서관 이용안내</a></li>
-							<li><a href="#"><img src="images/icosummaryMain3_show.png" alt=""/>전자 도서관</a></li>
-							<li><a href="#"><img src="images/icosummaryMain7_show.png" alt=""/>문화행사 신청</a></li>
-							<li><a href="#"><img src="images/icosummaryMain4_show.png" alt=""/>희망도서 신청</a></li>
-							<li><a href="#"><img src="images/icosummaryMain8_show.png" alt=""/>이용 안내</a></li>
-							<li><a href="#"><img src="images/icosummaryMain5_show.png" alt=""/>도서관 소개</a></li>
+							<li><a href="#"><div class="img_box1"></div><p>도서관 이용안내</p></a></li>
+							<li><a href="#"><div class="img_box2"></div><p>전자 도서관</p></a></li>
+							<li><a href="#"><div class="img_box3"></div><p>문화행사 신청</p></a></li>
+							<li><a href="#"><div class="img_box4"></div><p>희망도서 신청</p></a></li>
+							<li><a href="#"><div class="img_box5"></div><p>이용 안내</p></a></li>
+							<li><a href="#"><div class="img_box6"></div><p>도서관 소개</p></a></li>
 						</ul>
 					</div>
 				</div>
@@ -562,7 +562,7 @@
 							<div class="slide_con_body">
 								<div class="slide_con_bg">
 									<img src="images/img_samdeok.png" alt="삼덕도서관"/>
-								</div>							
+								</div>
 								<ul>
 									<li><span class="icon"><img src="images/ico_libInfo_01.png" alt=""/></span><a href="#">안양시 만안구 병목안로 58(안양동 714-94)</a></li>
 									<li><a href="#">[열람실]평일 09시 20시/ 주말 09시~18시</a></li>
@@ -583,7 +583,7 @@
 							<div class="slide_con_body">
 								<div class="slide_con_bg">
 									<img src="images/img_bakdal.png" alt="박달도서관"/>
-								</div>							
+								</div>
 								<ul>
 									<li><span class="icon"><img src="images/ico_libInfo_01.png" alt=""/></span><a href="#">안양시 만안구 박달로 459(박달동))</a></li>
 									<li><a href="#">[열람실]평일 09시 20시/ 주말 09시~18시</a></li>
@@ -605,7 +605,7 @@
 							<div class="slide_con_body">
 								<div class="slide_con_bg">
 									<img src="images/img_pyeongchon.png" alt="평촌도서관"/>
-								</div>							
+								</div>
 								<ul>
 									<li><span class="icon"><img src="images/ico_libInfo_01.png" alt=""/></span><a href="#">안양시 동안구 관평로 213(관양동)</a></li>
 									<li><a href="#">[열람실]평일 09시 20시/ 주말 09시~18시</a></li>
@@ -627,7 +627,7 @@
 							<div class="slide_con_body">
 								<div class="slide_con_bg">
 									<img src="images/img_gwanyang.png" alt="관양도서관"/>
-								</div>							
+								</div>
 								<ul>
 									<li><span class="icon"><img src="images/ico_libInfo_01.png" alt=""/></span><a href="#">안양시 동안구 동편로 124(관양동)</a></li>
 									<li><a href="#">[열람실]평일 09시 20시/ 주말 09시~18시</a></li>
@@ -649,7 +649,7 @@
 							<div class="slide_con_body">
 								<div class="slide_con_bg">
 									<img src="images/img_bisan.png" alt="비산도서관"/>
-								</div>							
+								</div>
 								<ul>
 									<li><span class="icon"><img src="images/ico_libInfo_01.png" alt=""/></span><a href="#">안양시 동안구 관악대로 123(비산동)</a></li>
 									<li><a href="#">[열람실]평일 09시 20시/ 주말 09시~18시</a></li>
@@ -661,7 +661,7 @@
 								</ul>
 							</div>
 						</div> <!-- slide_con -->
-						
+
 						<!-- 슬라이드 콘텐츠 -->
 						<div class="slide_con">
 							<div class="slide_con_name">
@@ -671,7 +671,7 @@
 							<div class="slide_con_body">
 								<div class="slide_con_bg">
 									<img src="images/img_hogye.png" alt="호계도서관"/>
-								</div>							
+								</div>
 								<ul>
 									<li><span class="icon"><img src="images/ico_libInfo_01.png" alt=""/></span><a href="#">안양시 동안구 경수대로685번길 26(호계동</a></li>
 									<li><a href="#">[열람실]평일 09시 20시/ 주말 09시~18시</a></li>
@@ -683,7 +683,7 @@
 								</ul>
 							</div>
 						</div> <!-- slide_con -->
-						
+
 						<!-- 슬라이드 콘텐츠 -->
 						<div class="slide_con">
 							<div class="slide_con_name">
@@ -693,7 +693,7 @@
 							<div class="slide_con_body">
 								<div class="slide_con_bg">
 									<img src="images/img_child.png" alt="어린이도서관"/>
-								</div>							
+								</div>
 								<ul>
 									<li><span class="icon"><img src="images/ico_libInfo_01.png" alt=""/></span><a href="#">	안양시 동안구 동안로 66(호계동)</a></li>
 									<li><a href="#">[열람실]평일 09시 20시/ 주말 09시~18시</a></li>
@@ -715,7 +715,7 @@
 							<div class="slide_con_body">
 								<div class="slide_con_bg">
 									<img src="images/img_beolmal.png" alt="벌말도서관"/>
-								</div>							
+								</div>
 								<ul>
 									<li><span class="icon"><img src="images/ico_libInfo_01.png" alt=""/></span><a href="#">안양시 동안구 흥안대로 434번길 19-27(평촌동)</a></li>
 									<li><a href="#">[열람실]평일 09시 20시/ 주말 09시~18시</a></li>
@@ -954,7 +954,7 @@
 						<div class="contents_banner"></div>
 					</div> <!-- id="s_contents3_h" -->
 					<div id="section_contents3_body">
-						
+
 						<div class="section3_wrap" style="display:block">
 							<div class="box1">
 								<div class="box_header"><h3>석수도서관</h3><button type="button">접수중</button></div>
@@ -1003,9 +1003,9 @@
 								<p>참여대상:누구나</p>
 								<p>기간:2021.05.01~2021.05.31</p>
 								</div>
-							</div>						
+							</div>
 						</div> <!-- class="section3_wrap" -->
-						
+
 						<div class="section3_wrap">
 							<div class="box1">
 								<div class="box_header"><h3>만안도서관</h3><button type="button">접수중</button></div>
@@ -1054,9 +1054,9 @@
 								<p>참여대상:누구나</p>
 								<p>기간:2021.05.01~2021.05.31</p>
 								</div>
-							</div>						
+							</div>
 						</div> <!-- class="section3_wrap" -->
-						
+
 						<div class="section3_wrap">
 							<div class="box1">
 								<div class="box_header"><h3>삼덕도서관</h3><button type="button">접수중</button></div>
@@ -1105,9 +1105,9 @@
 								<p>참여대상:누구나</p>
 								<p>기간:2021.05.01~2021.05.31</p>
 								</div>
-							</div>						
+							</div>
 						</div> <!-- class="section3_wrap" -->
-						
+
 						<div class="section3_wrap">
 							<div class="box1">
 								<div class="box_header"><h3>박달도서관</h3><button type="button">접수중</button></div>
@@ -1156,9 +1156,9 @@
 								<p>참여대상:누구나</p>
 								<p>기간:2021.05.01~2021.05.31</p>
 								</div>
-							</div>						
+							</div>
 						</div> <!-- class="section3_wrap" -->
-						
+
 						<div class="section3_wrap">
 							<div class="box1">
 								<div class="box_header"><h3>평촌도서관</h3><button type="button">접수중</button></div>
@@ -1207,9 +1207,9 @@
 								<p>참여대상:누구나</p>
 								<p>기간:2021.05.01~2021.05.31</p>
 								</div>
-							</div>						
+							</div>
 						</div> <!-- class="section3_wrap" -->
-						
+
 						<div class="section3_wrap">
 							<div class="box1">
 								<div class="box_header"><h3>비산도서관</h3><button type="button">접수중</button></div>
@@ -1258,9 +1258,9 @@
 								<p>참여대상:누구나</p>
 								<p>기간:2021.05.01~2021.05.31</p>
 								</div>
-							</div>						
+							</div>
 						</div> <!-- class="section3_wrap" -->
-						
+
 						<div class="section3_wrap">
 							<div class="box1">
 								<div class="box_header"><h3>호계도서관</h3><button type="button">접수중</button></div>
@@ -1309,9 +1309,9 @@
 								<p>참여대상:누구나</p>
 								<p>기간:2021.05.01~2021.05.31</p>
 								</div>
-							</div>						
+							</div>
 						</div> <!-- class="section3_wrap" -->
-						
+
 						<div class="section3_wrap">
 							<div class="box1">
 								<div class="box_header"><h3>어린이도서관</h3><button type="button">접수중</button></div>
@@ -1360,9 +1360,9 @@
 								<p>참여대상:누구나</p>
 								<p>기간:2021.05.01~2021.05.31</p>
 								</div>
-							</div>						
+							</div>
 						</div> <!-- class="section3_wrap" -->
-						
+
 						<div class="section3_wrap">
 							<div class="box1">
 								<div class="box_header"><h3>벌말도서관</h3><button type="button">접수중</button></div>
@@ -1411,7 +1411,7 @@
 								<p>참여대상:누구나</p>
 								<p>기간:2021.05.01~2021.05.31</p>
 								</div>
-							</div>						
+							</div>
 						</div> <!-- class="section3_wrap" -->
 					</div> <!-- id="s_contents_d -->
 				</div>
@@ -1426,23 +1426,27 @@
 			<div id="footer_menu">
 				<div class="footer_menu_top">
 					<ul>
-						<li class="t_active"><a href="#">개인정보처리방침</a></li>
+						<li><a href="#">개인정보처리방침</a></li>
 						<li><a href="#">이메일추출방지정책</a></li>
 						<li><a href="#">독서관련법규</a></li>
 					</ul>
-					<div class="f_con1 guideText">
+					<div class="footer_con">
 					<input type="text" class="guideText" value="관련기관사이트"/>
 					<button type="button" class="btn">이동</button>
 					</div>
-				</div>
+				</div> <!-- class="footer_menu_top" -->
 				<div class="footer_menu_bottom">
-					<div class="f_con2">
+					<div class="footer_con">
 						<p>Copyright 2020. Anyang Municipal Library All Rights Reserved.</p>
 					</div>
-				</div>
+				</div> <!-- class="footer_menu_bottom" -->
 			</div>
 		</div>
 	</footer>
-	
+
+	<div id="inquire_message">
+		<div class="inquire_top"><a href="#"><img src="images/message.png" alt="문의바로가기"/></a></div>
+		<div class="inquire_bottom"><p>문의함 바로가기</p></div>
+	</div>
 </body>
 </html>

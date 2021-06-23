@@ -7,8 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<meta name="Generator" content="Notepad++"/>	
 	<title>안양시립도서관</title>
+	<link rel="shortcut icon" href="images/ico_favicon.png">		
 	<!-- css -->
-	<link rel="stylesheet" href="css/memberform.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/member_form.css"/>
 	<!-- jquery -->
   <script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.easing.1.3.min.js"></script>
@@ -80,7 +82,7 @@
    function check_id() {
      window.open("member_check_id.php?id=" + document.member_form.id.value,
          "IDcheck",
-          "left=700,top=300,width=350,height=200,scrollbars=no,resizable=yes");
+          "left=700,top=300,width=353px,height=240px,scrollbars=no,resizable=no");
    }
 </script>
 </head>
@@ -213,12 +215,9 @@
 				       			<p id="reset_button" onclick="reset_form()">취소하기</p>
 	           		</div>
 			    	</div>
-
            </form>
 					</div>						
 					</div>
-
-
 				</div>
 			</div>
 		</div>
