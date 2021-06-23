@@ -1,3 +1,14 @@
+*{margin:0; padding:0; border:0;}
+ul,li {list-style:none;}
+a {text-decoration:none; font-family:'Noto Sans', '¸¼Àº °íµñ', 'Malgun Gothic', 'AppleGothic',sans-serif;}
+.cf:after{content:''; display:block; clear:both;}
+.hidden{display:block; font-size:0; width:1500px; height:0px; position:absolute; left:-100%; text-indent:-555555px;}
+.gray{color:#aaaaaa;}
+
+header{height:160px;}
+section{height:1000px;}
+footer{height:200px;}
+
 #login_box { width: 429px; margin: 0 auto; }
 #login_title { margin: 50px 0 0 0; padding-bottom: 5px;	border-bottom: solid 2px #ffbe10; }
 #login_title span {	font-size: 20px; font-weight: bold; }

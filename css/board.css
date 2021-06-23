@@ -1,3 +1,9 @@
+*{margin:0; padding:0; border:0;}
+ul,li {list-style:none;}
+a {text-decoration:none; font-family:'Noto Sans', '맑은 고딕', 'Malgun Gothic', 'AppleGothic',sans-serif;}
+.cf:after{content:''; display:block; clear:both;}
+.hidden{display:block; font-size:0; width:1500px; height:0px; position:absolute; left:-100%; text-indent:-555555px;}
+.gray{color:#aaaaaa;}
 /* 게시판 글쓰기(board_form.php) */
 #board_box { position: relative; width: 800px; margin: 0 auto; }
 #board_box h3 { margin-top: 30px;	padding: 10px; border-bottom: solid 2px #516e7f; font-size: 20px; }

@@ -1,3 +1,10 @@
+*{margin:0; padding:0; border:0;}
+ul,li {list-style:none;}
+a {text-decoration:none; font-family:'Noto Sans', '맑은 고딕', 'Malgun Gothic', 'AppleGothic',sans-serif;}
+.cf:after{content:''; display:block; clear:both;}
+.hidden{display:block; font-size:0; width:1500px; height:0px; position:absolute; left:-100%; text-indent:-555555px;}
+.gray{color:#aaaaaa;}
+
 /* 관리자 회원 목록보기(admin_list.php) */
 #admin_box { width: 800px; margin: 0 auto;}
 #admin_box h3#member_title { margin: 30px 0 10px 0;}

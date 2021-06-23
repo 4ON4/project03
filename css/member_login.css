@@ -1,0 +1,101 @@
+﻿*{margin:0; padding:0; border:0;}
+ul,li {list-style:none;}
+a {text-decoration:none; font-family:'Noto Sans', '맑은 고딕', 'Malgun Gothic', 'AppleGothic',sans-serif;}
+.cf:after{content:''; display:block; clear:both;}
+.hidden{display:block; font-size:0; width:1500px; height:0px; position:absolute; left:-100%; text-indent:-555555px;}
+.gray{color:#aaaaaa;}
+
+/* 섹션 */
+
+section{width:100%; height:1100px;}
+#section{width:100%; height:1100px;}
+
+#contentsWrap{width:100%; height:150px; position:absolute; left:0; margin:0 auto; background-image: url(../images/svisual_img.png); background-size: 100% auto; background-color: #eeeeee; background-repeat:repeat-x; box-shadow:inset 0px 10px 5px rgba(0, 0, 0, .1); }
+#contentsWrap .content_header{width:1420px; height:150px; margin:0 auto;}
+#contentsWrap .content_header .header_wrap{float:right; width:1150px; height:150px;}
+
+	.function1{width:500px; height:150px; float:left;}
+	.function1>h2{height:100px; width:300px; font-size:35px; line-height:130px; text-indent:10px; }
+	.function1>ul{ height:50px; line-height:50px; width:380px; text-indent:15px;}
+	.function1>ul>li{float:left;}
+	.function1>ul>li>a{ color:#333333; font-weight:bold;}
+	
+	.function2{width:650px; height:150px; float:left;  position:relative;}
+	
+		.print{width:60px; height:60px; background:url(../images/ico_sns.png) no-repeat; background-color:#ffffff;  background-position:10px -32px;border-radius:50%; position:absolute; right:0; bottom:2px; text-align:center; cursor:pointer; z-index:10;}
+		.share_con{position:absolute; right:125px; bottom:2px; z-index:10; display:none;}
+			.share_con>ul>li{float:left; margin-right:5px;}
+			.share_con>ul>li>a {display:block;}
+			
+		.kakaotalk{width:60px; height:60px; background:url(../images/ico_sns.png) no-repeat; background-color:#fed300;  background-position:10px -76px;  border-radius:50%; cursor:pointer;}
+		.twitter{width:60px; height:60px; background:url(../images/ico_sns.png) no-repeat; background-color:#2e97e9;  background-position:10px -116px; border-radius:50%; cursor:pointer;}
+		.facebook{width:60px; height:60px; background:url(../images/ico_sns.png) no-repeat; background-color:#4064d9;  background-position:10px -157px; border-radius:50%; cursor:pointer;}
+		.Qr{width:60px; height:60px; background:url(../images/ico_sns.png) no-repeat; background-color:#ffffff;  background-position:8px -285px; border-radius:50%; cursor:pointer;}
+		.link{width:60px; height:60px; background:url(../images/ico_sns.png) no-repeat; background-color:#ffffff;  background-position:8px -245px; border-radius:50%; cursor:pointer;}
+
+		.share{width:60px; height:60px; background:url(../images/ico_sns.png) no-repeat; background-color:#ffffff; background-position:10px 11px;border-radius:50%; position:absolute; right:65px; bottom:2px; text-align:center; cursor:pointer; z-index:10;}
+
+
+/* 하단컨텐츠 */
+#contentsWrap .content_bottom{width:1420px; height:850px; margin:0 auto;}
+	#left_content{float:left; width:225px; height:850px;}
+	#left_content .left_menu{border:2px solid #4b4685; width:220px;  position:absolute; top:55px; z-index:5; border-radius:3px;}
+	
+	.left_menu_logo{width:220px; height:110px; background:#6b64be;}
+	.left_menu_logo img{width:100%; height:100%;}
+	.left_menu_text{position:absolute; top:40px; width:220px; text-align:center;}
+	.left_menu_text span{color:#ffffff; font-size:25px; font-weight:bold; }
+
+	.left_menu ul li{width:220px;}
+	.left_menu>ul>li>a{display:block; color:#333333; font-size:18px; padding:25px 0; border-bottom:1px solid #dddddd;  text-indent:10px; background:#ffffff;}
+	.left_menu>ul>li>a>span{float:right; color: #333333; width:18%; font-size:20px;}
+	.left_menu ul li ul.left_menu_sub {display:none; }
+	.left_menu ul li ul.left_menu_sub li a{display:block; color:#333333; font-size:18px; padding:15px 0; text-indent:10px; background:#dddddd; }
+
+	/* 레프트메뉴엑티브 */
+	.left_menu ul li.left_active>a{color:#6b64be; border:none; background:#eeeeee; font-weight:bold;}	
+	.sub_active{color:#333333; text-decoration:underline; font-weight:bold;}
+	
+	/* 로그인박스 */
+	#right_content{float:left; width:1195px; height:850px; background:#ffffff; position:relative;}
+	.login_box{background:#ffffff; width:900px; height:500px; border:2px dashed #555555; position:absolute; top:100px; left:150px;}
+
+	.login_img{float:left; width:300px; height:300px; background:#ffffff;}
+	.login_img>img{margin:80px;}
+	
+	/* 로그인 탑 */
+	.login_top{float:left; width:600px; height:300px; background:red;}
+	.login_top ul{float:left; width:380px; height:300px;  background:#ffffff; position:relative;}
+	.login_top ul li.login{width:350px; height:50px; border:1px solid #222222; background:#ffffff; position:absolute; top:80px; left:10px;}
+	.login_top ul li.password{width:350px; height:50px; border:1px solid #222222; background:#ffffff; position:absolute; top:140px;  left:10px;}
+	.login_top ul li.find{float:left; margin-right:10px; position:relative; top:210px; left:30px;}
+	.login_top ul li.find a{color:#111111;}
+	.login_top ul li img{float:left; width:40px; height:40px; margin-top:5px;}
+	.login_top ul li>input{float:left; width:300px; height:40px; margin-top:5px; border:none;}
+	.login_top>.button{float:left; width:220px; height:300px;  background:#ffffff; position:relative;}
+	.login_top>.button>button a{position:absolute; color:#ffffff; font-weight:bold; padding:50px; cursor:pointer; background:#6b64be; font-size:20px; top:80px;}
+	
+
+	
+	/* 로그인 바텀 */
+	.login_bottom{clear:both; width:900px; height:200px; background:#eeeeee;}
+	.login_bottom ul li{list-style:square; margin-left:30px; line-height:30px; padding:5px 5px; color:#666666;}
+	
+
+
+/* 메인 콘텐트 */
+#main_content { position: relative; width: 1000px; height: 400px; margin: 0 auto; }
+
+/* 가입 양식 폼 */
+#join_box {	width: 600px;	margin: 0 auto; }
+#join_box h2 { 	border-bottom: solid 1px #dddddd; padding-top: 50px; }
+#join_box .col1 { float: left;	width: 110px; margin-top: 4px; }
+#join_box .col2 { float: left;	width: 400px; }
+#join_box .col3 { float: left; }
+#join_box .form input { width: 390px;	height: 22px; }
+#join_box .form { height: 38px; }
+#join_box .id {	margin-top: 20px; }
+#join_box input[name=email1] { width: 100px; }
+#join_box input[name=email2] { width: 275px; }
+#join_box .bottom_line { margin-top: 10px;	border-bottom: solid 1px #cccccc; }
+#join_box .buttons { text-align: right;	margin: 20px 100px 0 0; }	
