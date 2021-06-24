@@ -28,11 +28,11 @@ footer{height:200px; width:100%;}
 	#header_gnb ul li span{display:block; padding:0 6px; line-height:50px; color:#ffffff; font-weight:bold; letter-spacing:0.15em;}
 
 	/* 시계카운터 */
-	.counter_wrap{float:right; width:150px; height:50px; position:relative;}
-	.counter_wrap span#counter{position:absolute; left:10px;}
-	.counter_wrap span.counter_text1{position:absolute; left:66px; }
-	.counter_wrap span.counter_text2{position:absolute; left:0px;}
-	.counter_wrap input{position:absolute; left:100px; top:5px; padding:10px; border-radius:8px; cursor:pointer;}	
+	.counter_wrap{float:left; width:130px; height:35px; position:relative; border:1px solid #ffffff; border-radius:5px; top:5px;}
+	.counter_wrap span#counter{float:left; font-size:#ffffff; font-size:20px; font-weight:bold; width:65px; height:35px; line-height:35px; margin-left:15px; color:#ffffff;}
+	.counter_button{float:left; width:50px; height:35px; background:none; color:#ffffff; font-weight:bold; font-size:16px;}
+	.counter_wrap .rec{position:absolute; right:-7px; top:5px;}
+	.counter_wrap .rec img{width:7px;}
 	
 /* 헤더바텀 */
 
@@ -46,6 +46,7 @@ footer{height:200px; width:100%;}
 	/* 메뉴 */
 	#main_move{width:1200px; height:110px;background:#b300b3;  float:left;}
 	#main_move>ul.oneinner>li.onedepth{float:left; width:200px; height:110px; text-align:center; }
+	#main_move>ul.oneinner>li.onedepth:hover a{transition:0.5s; color:#6b64be;}
 	#main_move>ul.oneinner>li.onedepth.on>a{color:#6b64be;}
 	#main_move>ul.oneinner>li.onedepth>a{display:block;  background:#ffffff; font-size:20px; font-weight:bold; color:#111111; height:110px; line-height:110px;}
 	#main_move ul.oneinner li.onedepth:hover .twoinner{display:block;}

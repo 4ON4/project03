@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>안양 시립도서관</title>
+	<link rel="shortcut icon" href="images/ico_favicon.png">
+	<!--css-->
+	<link rel="stylesheet" type="text/css" href="./css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/sytl.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/message_send_form.css"/>
+	<!--jquery-->
+	<script></script>
+</head>
+<body>
+	<header id="header">
+
+	</header>
+
+	<section id="section" class="cf">
+		<div id="section_wrap">
+			<div class="contents">
+				<div class="content_header">
+					<h2>나의 쪽지함</h2>
+				</div>
+				<div class="content_wrap cf">
+					<div class="content_tab">
+						<ul class="buttons">
+							<li class="message_on tab1"><a href="#">쪽지보내기</a></li>
+							<li class="tab2"><a href="message_box.php?mode=rv">송신쪽지함</a></li>
+							<li class="tab3"><a href="message_box.php?mode=send">수신쪽지함</a></li>
+						</ul>
+					</div>
+					<div class="content">
+						<div class="form">
+							<div class="form_header cf">
+									<h3>메세지 보내기</h3>
+									<p>message send</p>
+							</div>
+							<div class="form_content">
+								<article>
+									<div id="message_box">
+										<form  name="message_form" method="post" action="message_insert.php?send_id=<?=$userid?>">
+											<div id="write_msg">
+												<ul>
+													<li>
+														<span class="col1">보내는 사람 : </span>
+														<span class="col2"><?=$userid?></span>
+													</li>
+													<li>
+														<span class="col1">수신 아이디 : </span>
+														<span class="col2"><input name="rv_id" type="text"></span>
+													</li>
+													<li>
+														<span class="col1">제목 : </span>
+														<span class="col2"><input name="subject" type="text"></span>
+													</li>
+													<li id="text_area">
+														<span class="col1">내용 : </span>
+														<span class="col2">
+															<textarea name="content"></textarea>
+														</span>
+													</li>
+												</ul>
+												<button type="button" onclick="check_input()">보내기</button>
+											</div>
+										</form>
+									</div> <!-- message_box -->
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+
+	</footer>
+</body>
+</html>
