@@ -21,44 +21,44 @@
 <script>
    function check_input()
    {
-      if (!document.member_form.id.value) {
+      if (!document.member_form.id.value.trim()) {
           alert("아이디를 입력하세요!");    
           document.member_form.id.focus();
           return;
       }
 
-      if (!document.member_form.pass.value) {
+      if (!document.member_form.pass.value.trim()) {
           alert("비밀번호를 입력하세요!");    
           document.member_form.pass.focus();
           return;
       }
 
-      if (!document.member_form.pass_confirm.value) {
+      if (!document.member_form.pass_confirm.value.trim()) {
           alert("비밀번호확인을 입력하세요!");    
           document.member_form.pass_confirm.focus();
           return;
       }
 
-      if (!document.member_form.name.value) {
+      if (!document.member_form.name.value.trim()) {
           alert("이름을 입력하세요!");    
           document.member_form.name.focus();
           return;
       }
 
-      if (!document.member_form.email1.value) {
+      if (!document.member_form.email1.value.trim()) {
           alert("이메일 주소를 입력하세요!");    
           document.member_form.email1.focus();
           return;
       }
 
-      if (!document.member_form.email2.value) {
+      if (!document.member_form.email2.value.trim()) {
           alert("이메일 주소를 입력하세요!");    
           document.member_form.email2.focus();
           return;
       }
 
       if (document.member_form.pass.value != 
-            document.member_form.pass_confirm.value) {
+            document.member_form.pass_confirm.value.trim()) {
           alert("비밀번호가 일치하지 않습니다.\n다시 입력해 주세요!");
           document.member_form.pass.focus();
           document.member_form.pass.select();

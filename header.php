@@ -1,8 +1,5 @@
 <?php
-    define('DBuser','aze624');
-    define('DBpass','ay2111!!');
-    define('DBname','aze624');
-    
+    include "define.php";
     session_start();
     if (isset($_SESSION["userid"])) $userid = $_SESSION["userid"];
     else $userid = "";
@@ -21,8 +18,9 @@
     if (!$userid){
     ?>                  
                     <div class="counter_wrap">
-                        <span id="counter"></span><span class="counter_text1">후</span><br><span class="counter_text2">자동이동</span><input class="counter_button" type="button" value="연장" onclick="counter_reset()">
-                    </div>                 
+                        <span id="counter"></span><input class="counter_button" type="button" value="연장" onclick="counter_reset()">
+                        <div class="rec"><img src="images/Polygon 1.png" alt=""/></div>
+                    </div>           
                     <li title="회원가입화면으로 이동합니다."><a href="member_form.php">회원가입</a></li>
                     <li title="로그인화면으로 이동합니다."><a href="member_login.php">로그인</a></li>   
 
@@ -40,10 +38,11 @@
     if($userlevel==1) {
 ?>
                     <li><a href="admin.php">관리자 모드</a></li>
+                    <li><a href="board_form.php">게시판</a></li>
 <?php
     }
 ?>
-                    <li title="안양시립도서관 사이트맵으로 이동합니다."><a href="https://lib.anyang.go.kr/intro/siteMap.do">사이트맵</a></li>
+                    <li title="쪽지함으로 이동합니다."><a href="message_form.php">메세지</a></li>
                 </ul>
             </div>
         </div> <!-- id="header_top" -->

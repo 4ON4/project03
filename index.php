@@ -63,10 +63,6 @@
 	</script>
 </head>
 <body> 
-	<div id="inquire_message">
-		<div class="inquire_top"><a href="message_form.php"><img src="images/message.png" alt="문의바로가기"/></a></div>
-		<div class="inquire_bottom"><p>문의함 바로가기</p></div>
-	</div>	
 	<header id="header">
 		<?php include "header.php";?>
 	</header>

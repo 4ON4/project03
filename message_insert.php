@@ -1,8 +1,6 @@
 <meta charset="UTF-8">
 <?php
-   define('DBuser','aze624');
-   define('DBpass','ay2111!!');
-   define('DBname','aze624');
+    include "define.php";
     $send_id = $_GET["send_id"];
 
     $rv_id = $_POST['rv_id'];

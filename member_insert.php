@@ -1,8 +1,6 @@
 <?php header("Content-Type:text/html;charset=utf-8"); ?>
 <?php 
-  define('DBuser','aze624');
-  define('DBpass','ay2111!!');
-  define('DBname','aze624');
+    include "define.php";
     
   $id   = $_POST["id"]; 
   $pass = $_POST["pass"]; 

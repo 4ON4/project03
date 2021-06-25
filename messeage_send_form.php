@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header id="header">
-		<?php include "header.php"?>
+		<?php include "header2.php"?>
 	</header>
 
 	<section id="section" class="cf">
@@ -22,9 +22,9 @@
 				<div class="content_wrap">
 					<div class="content_tab">
 						<ul>
-							<li class="message_on"><img src="">쪽지보내기</li>
-							<li><img src="">송신쪽지함</li>
-							<li><img src="">수신쪽지함</li>
+							<li class="message_on">쪽지보내기</li>
+							<li>송신쪽지함</li>
+							<li>수신쪽지함</li>
 						</ul>
 					</div>
 					<div class="content">

@@ -1,7 +1,5 @@
 <?php
-    define('DBuser','aze624');
-    define('DBpass','ay2111!!');
-    define('DBname','aze624');
+    include "define.php";
     
     session_start();
     if (isset($_SESSION["userid"])) $userid = $_SESSION["userid"];
@@ -37,10 +35,11 @@
     if($userlevel==1) {
 ?>
                     <li><a href="admin.php">관리자 모드</a></li>
+                    <li><a href="board_form.php">게시판</a></li>                    
 <?php
     }
 ?>
-                    <li title="안양시립도서관 사이트맵으로 이동합니다."><a href="https://lib.anyang.go.kr/intro/siteMap.do">사이트맵</a></li>
+                      <li title="쪽지함으로 이동합니다."><a href="message_form.php">메세지</a></li>
                 </ul>
             </div>
         </div> <!-- id="header_top" -->
