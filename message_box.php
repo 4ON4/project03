@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head> 
+<head>
 <meta charset="utf-8">
 <title>안양 시립도서관</title>
+<link rel="shortcut icon" href="images/ico_favicon.png">
 <link rel="stylesheet" type="text/css" href="./css/common.css">
-<link rel="stylesheet" type="text/css" href="./css/message.css">
-<link rel="shortcut icon" href="images/ico_favicon.png">	
+<link rel="stylesheet" type="text/css" href="./css/message_box.css">
+<script>
+  function check_input() {
+  	  if (!document.message_form.rv_id.value)
+      {
+          alert("수신 아이디를 입력하세요!");
+          document.message_form.rv_id.focus();
+          return;
+      }
+      if (!document.message_form.subject.value)
+      {
+          alert("제목을 입력하세요!");
+          document.message_form.subject.focus();
+          return;
+      }
+      if (!document.message_form.content.value)
+      {
+          alert("내용을 입력하세요!");
+          document.message_form.content.focus();
+          return;
+      }
+      document.message_form.submit();
+   }
+</script>
 </head>
-<body> 
+<body>
 <header>
     <?php include "header.php";?>
-</header>  
-<section>
-   	<div id="message_box">
-	    <h3>
+</header>
+<?php
+	if (!$userid )
+	{
+		echo("<script>
+				alert('로그인 후 이용해주세요!');
+				history.go(-1);
+				</script>
+			");
+		exit;
+	}
+?>
+	<section id="section" class="cf">
+		<div id="section_wrap">
+			<div class="contents">
+				<div class="content_header">
+					<h2>나의 쪽지함</h2>
+				</div>
+				<div class="content_wrap cf">
+					<div class="content_tab">
+						<ul class="buttons">
+							<li class="tab1"><a href="message_form.php">쪽지보내기</a></li>
+							<li class="message_on tab2"><a href="message_box.php?mode=rv">송신쪽지함</a></li>
+							<li class="tab3"><a href="message_box.php?mode=send">수신쪽지함</a></li>
+						</ul>
+					</div>
+					<div class="content">
+						<div class="form">
+							<div class="form_header cf">
+								<h3>
 <?php
  		if (isset($_GET["page"]))
 			$page = $_GET["page"];
@@ -27,22 +76,28 @@
 		else
 			echo "수신 쪽지함 > 목록보기";
 ?>
-		</h3>
-		<!-- <div> 필요없음 -->
-		<ul id="message">
-			<li>
-				<span class="col1">번호</span>
-				<span class="col2">제목</span>
-				<span class="col3">
+								</h3>
+								<p>message send</p>
+							</div>
+							<div id="form_content" class="cf" >
+								<div id="message_box" class="cf">
+									<form  name="message_form" method="post" action="message_insert.php?send_id=<?=$userid?>">
+										<div id="send_box" class="cf">
+										<!-- <div> 필요없음 -->
+										<div id="message" class="cf">
+											<div class="message_box1 cf">
+												<div class="col1">번호</div>
+												<div class="col2">제목</div>
+												<div class="col3">
 <?php						
-					if ($mode=="send")
-						echo "받은이";
-					else
-						echo "보낸이";
+		if ($mode=="send")
+			echo "받은이";
+		else
+			echo "보낸이";
 ?>
-				</span>
-				<span class="col4">등록일</span>
-			</li>
+												</div>
+												<div class="col4">등록일</div>
+											</div>
 <?php
 	$con = mysqli_connect("localhost", DBuser, DBpass, DBname);
 
@@ -84,21 +139,22 @@
 	  
       $result2 = mysqli_query($con, "select name from members where id='$msg_id'");
       $record = mysqli_fetch_array($result2);
-      $msg_name     = $record["name"];	  
-?>
-			<li>
-				<span class="col1"><?=$number?></span>
-				<span class="col2"><a href="message_view.php?mode=<?=$mode?>&num=<?=$num?>"><?=$subject?></a></span>
-				<span class="col3"><?=$msg_name?>(<?=$msg_id?>)</span>
-				<span class="col4"><?=$regist_day?></span>
-			</li>	
+      $msg_name = $record["name"];	  
+?>								
+											<div class="message_box2 cf">
+												<div class="col1"><?=$number?></div>
+												<div class="col2"><a href="message_view.php?mode=<?=$mode?>&num=<?=$num?>"><?=$subject?></a></div>
+												<div class="col3"><?=$msg_name?>(<?=$msg_id?>)</div>
+												<div class="col4"><?=$regist_day?></div>
+											</div>
 <?php
 	   $number--;
    }
    mysqli_close($con);
 ?>
-		</ul>
-		<ul id="page_num"> 	
+										</div>
+										<div id="page_num">
+											<ul class="num">
 <?php
 	if ($total_page>=2 && $page >= 2)	
 	{
@@ -129,14 +185,17 @@
 		else 
 			echo "<li>&nbsp;</li>";
 ?>
-		</ul> <!-- page -->	    	
-		<ul class="buttons">
-			<li><button onclick="location.href='message_box.php?mode=rv'">수신 쪽지함</button></li>
-			<li><button onclick="location.href='message_box.php?mode=send'">송신 쪽지함</button></li>
-			<li><button onclick="location.href='message_form.php'">쪽지 보내기</button></li>
-		</ul>
-	</div> <!-- message_box -->
-</section> 
+											</ul>
+										</div>
+									</form>
+								</div> <!-- message_box -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 <footer>
     <?php include "footer.php";?>
 </footer>

@@ -34,12 +34,12 @@
                 <div class="libray_middle_menu">
                     <div class="middle_menu_box">
                         <ul class="menu_box">
-                            <li><a href="#"><img src="images/icosummaryMain1_show.png" alt=""/>도서관 이용안내</a></li>
-                            <li><a href="#"><img src="images/icosummaryMain3_show.png" alt=""/>전자 도서관</a></li>
-                            <li><a href="#"><img src="images/icosummaryMain7_show.png" alt=""/>문화행사 신청</a></li>
-                            <li><a href="#"><img src="images/icosummaryMain4_show.png" alt=""/>희망도서 신청</a></li>
-                            <li><a href="#"><img src="images/icosummaryMain8_show.png" alt=""/>이용 안내</a></li>
-                            <li><a href="#"><img src="images/icosummaryMain5_show.png" alt=""/>도서관 소개</a></li>
+                            <li><a href="#"><span class="img_contents"><p class="img_box1"></p></span><span class="text">도서관 이용안내</span></a></li>
+                            <li><a href="#"><span class="img_contents"><p class="img_box2"></p></span><span class="text">전자 도서관</span></a></li>
+                            <li><a href="#"><span class="img_contents"><p class="img_box3"></p></span><span class="text">문화행사 신청</span></a></li>
+                            <li><a href="#"><span class="img_contents"><p class="img_box4"></p></span><span class="text">희망도서 신청</span></a></li>
+                            <li><a href="#"><span class="img_contents"><p class="img_box5"></p></span><span class="text">이용 안내</span></a></li>
+                            <li><a href="#"><span class="img_contents"><p class="img_box6"></p></span><span class="text">도서관 소개</span></a></li>
                         </ul>
                     </div>
                 </div>

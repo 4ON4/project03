@@ -20,6 +20,8 @@
     ?>                  
                     <li title="회원가입화면으로 이동합니다."><a href="member_form.php">회원가입</a></li>
                     <li title="로그인화면으로 이동합니다."><a href="member_login.php">로그인</a></li>   
+                    <li class="icon_message" title="쪽지함으로 이동합니다."><a href="message_form.php"><img src="images/email.png" alt="쪽지함으로 이동합니다."/></a></li>
+                    <li title="게시판으로 이동합니다."><a href="board_list.php"><img src="images/writing.png" alt="게시판으로 이동합니다."/></a></li>                    
 
 <?php
     } else {
@@ -28,18 +30,20 @@
                     <li><span><?=$logged?></span></li>      
                     <li title="로그아웃 됩니다."><a href="logout.php">로그아웃</a></li>
                     <li><a href="member_modify_form.php">정보 수정</a></li>
+                    <li class="icon_message" title="쪽지함으로 이동합니다."><a href="message_form.php"><img src="images/email.png" alt="쪽지함으로 이동합니다."/></a></li>
+                    <li title="게시판으로 이동합니다."><a href="board_list.php"><img src="images/writing.png" alt="게시판으로 이동합니다."/></a></li>   
+                                    
 <?php
     }
 ?>
 <?php
     if($userlevel==1) {
 ?>
-                    <li><a href="admin.php">관리자 모드</a></li>
-                    <li><a href="board_form.php">게시판</a></li>                    
+                    <li><a href="admin.php">관리자 모드</a></li>                    
 <?php
     }
 ?>
-                      <li title="쪽지함으로 이동합니다."><a href="message_form.php">메세지</a></li>
+
                 </ul>
             </div>
         </div> <!-- id="header_top" -->
@@ -336,7 +340,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="onedepth"><a href="sub6/sub6.html">마이페이지</a>
+                        <li class="onedepth"><a href="member_login.php">마이페이지</a>
                             <div class="twoinner">
                                 <div class="twodepth">
                                     <div class="sub_blank_box"></div>

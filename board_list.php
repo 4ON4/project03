@@ -7,23 +7,64 @@
 <link rel="stylesheet" type="text/css" href="./css/board.css">
 </head>
 <body> 
-<header>
-	<?php include "header.php";?>
-</header>  
-<section>
-	<div id="board_box">
-		<h3>
-			게시판 > 목록보기
-		</h3>
-		<ul id="board_list">
-			<li>
-				<span class="col1">번호</span>
-				<span class="col2">제목</span>
-				<span class="col3">글쓴이</span>
-				<span class="col4">첨부</span>
-				<span class="col5">등록일</span>
-				<span class="col6">조회</span>
-			</li>
+	<header>
+		<?php include "header2.php";?>
+	</header>  
+	<section id="section">
+		<div id="contentsWrap">
+			<div class="content_header">
+				<div class="header_wrap">
+					<div class="function1">
+						<h2>게시판</h2>
+						<ul>
+							<li><a href="index.php">홈</a></li>
+							<li><a href="#">&gt;&nbsp;게시판</a></li>
+						</ul>
+					</div>
+					<div class="function2">
+						<div class="share_wrap">
+							<div class="share"><a href="공유하기"></a></div>
+							<div class="share_con">
+								<ul>
+									<li><a href="#"><div class="kakaotalk"></div></a></li>
+									<li><a href="#"><div class="twitter"></div></a></li>
+									<li><a href="#"><div class="facebook"></div></a></li>
+									<li><a href="#"><div class="Qr"></div></a></li>
+									<li><a href="#"><div class="link"></div></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="print"><a href="프린트하기"></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="content_bottom">
+				<div id="left_content">
+					<div class="left_menu">
+						<h1 class="hidden">게시판</h1>
+						<div class="left_menu_logo"><a href="#"><img src="images/lnb_bg.png" alt=""/></a></div>
+						<div class="left_menu_text"><span>게시판</span></div>
+						<ul>
+							<li class="left_active"><a href="board_list.php">게시판 목록<span>-</span></a></li>
+							<li><a href="board_form.php">게시판 글쓰기<span>-</span></a></li>
+						</ul>
+					</div>
+				</div> <!-- id="left_content" -->
+				<div id="right_content" class="cf">
+					<div id="board_box">
+						<div id="board_box">
+							<h3>
+								게시판 > 목록보기
+							</h3>
+							<ul id="board_list">
+								<li>
+									<span class="col1">번호</span>
+									<span class="col2">제목</span>
+									<span class="col3">글쓴이</span>
+									<span class="col4">첨부</span>
+									<span class="col5">등록일</span>
+									<span class="col6">조회</span>
+								</li>
 <?php
 	if (isset($_GET["page"]))
 		$page = $_GET["page"];
@@ -65,21 +106,21 @@
 		else
 			$file_image = " ";
 ?>
-			<li>
-				<span class="col1"><?=$number?></span>
-				<span class="col2"><a href="board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></span>
-				<span class="col3"><?=$name?></span>
-				<span class="col4"><?=$file_image?></span>
-				<span class="col5"><?=$regist_day?></span>
-				<span class="col6"><?=$hit?></span>
-			</li>	
+								<li>
+									<span class="col1"><?=$number?></span>
+									<span class="col2"><a href="board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></span>
+									<span class="col3"><?=$name?></span>
+									<span class="col4"><?=$file_image?></span>
+									<span class="col5"><?=$regist_day?></span>
+									<span class="col6"><?=$hit?></span>
+								</li>	
 <?php
 		$number--;
 	}
 	mysqli_close($con);
 ?>
-		</ul>
-		<ul id="page_num"> 	
+								</ul>
+								<ul id="page_num"> 	
 <?php
 	if ($total_page>=2 && $page >= 2)	
 	{
@@ -109,27 +150,31 @@
 	else 
 		echo "<li>&nbsp;</li>";
 ?>
-		</ul> <!-- page -->	    	
-		<ul class="buttons">
-			<li><button onclick="location.href='board_list.php'">목록</button></li>
-			<li>
+							</ul> <!-- page -->	    	
+							<ul class="buttons">
+								<li><button onclick="location.href='board_list.php'">목록</button></li>
+								<li>
 <?php 
 	if($userid) {
 ?>
-				<button onclick="location.href='board_form.php'">글쓰기</button>
+							<button onclick="location.href='board_form.php'">글쓰기</button>
 <?php
 	} else {
 ?>
-				<a href="javascript:alert('로그인 후 이용해 주세요!')"><button>글쓰기</button></a>
+							<a href="javascript:alert('로그인 후 이용해 주세요!')"><button>글쓰기</button></a>
 <?php
 	}
 ?>
-			</li>
-		</ul>
-	</div> <!-- board_box -->
-</section> 
-<footer>
-    <?php include "footer.php";?>
-</footer>
+								</li>
+							</ul>
+						</div> <!-- board_box -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+	    <?php include "footer.php";?>
+	</footer>
 </body>
 </html>

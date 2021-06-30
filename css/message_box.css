@@ -28,64 +28,42 @@ section{width:100%; height:1500px;}
 
 
 
-		.content{float:left; width:1120px; height:1200px;   background-image:url(../images/book_background.png); background-repeat: no-repeat; background-color:#ffffff; position:relative;}
+		.content{float:left; width:1120px; height:1200px;  background-image:url(../images/book_background.png); background-repeat: no-repeat; background-color:#ffffff; position:relative;}
 		.form_header{width:100%; height:150px; box-sizing:border-box; background:#ffffff; background-image:url(../images/chat_icon.png); background-size:140px; background-repeat:no-repeat; line-height:100px; border-top:5px solid #333333; border-bottom:2px solid #222222; background-position:right bottom; }
 		.form_header>h3{display:block; margin-top:10px; height:30px; color:#333333; font-size:28px; text-shadow:1px 2px 3px #222223; text-indent:90px;}
 		.form_header>p{display:block; color:#888888; font-size:20px; text-shadow:1px 1px 3px #aaaaaa; text-indent:105px;}
 
 
 
-	.form_content{width:1000px; box-sizing:border-box; height:1000px; position:absolute; left:60px; bottom:25px;background:#eeeeee;}
+	#form_content{width:1000px; box-sizing:border-box; height:1000px; position:absolute; left:60px; bottom:25px;background:#ffffff;}
+	#message{width:1000px; height: 800px;}
+	.message_box1{width:1000px; box-sizing:border-box; height:60px; background:#eeeeee; border-top:2px solid #333333; border-bottom:1px solid #333333; box-sizing:border-box;}
+	.message_box1>div{float:left; height:56px; text-align:center; line-height:56px; font-weight:bold; color:#222222;}
+	.message_box1>.col1{width:100px; background:#eeeeee;}
+	.message_box1>.col2{width:400px;}
+	.message_box1>.col3{width:200px; background:#eeeeee;}
+	.message_box1>.col4{width:200px;}
 
-	#write_box ul li{clear:both;}
-	.col1{float:left;  width:200px; height:49px; background:#ffffff; margin-bottom:5px; border-bottom:1px solid #444444;}
+	.message_box2{width:1000px; height:800px; box-sizing:border-box; height:60px; border-bottom:1px solid #333333; box-sizing:border-box;}	
+	.message_box2>div{float:left; height:56px; text-align:center; line-height:56px; color:#222222;}
+	.message_box2>div a{color:#222222;}
+	.message_box2>.col1{width:100px; white-space: nowrap; text-overflow:ellipsis; overflow:hidden; }
+	.message_box2>.col2{width:400px; text-align:left; white-space: nowrap; text-overflow:ellipsis; overflow:hidden;}
+	.message_box2>.col3{width:200px; white-space: nowrap; text-overflow:ellipsis; overflow:hidden;}
+	.message_box2>.col4{width:200px; white-space: nowrap; text-overflow:ellipsis; overflow:hidden;}
 
-	.col1 img{float:left; width:50px;}
-	.col1 span{float:left; line-height:50px; text-indent:10px; font-size:18px; }
-
-
-	.col2{float:left; width: 450px; height:50px; background:#ffffff;}
-	#text_area .text_area{width: 800px; height: 500px; background: #ffffff; float: left;}
-	#text_area  .text_area textarea{width: 750px; height: 450px; padding: 15px; margin-left: 2px;}
-
-
-	.col2 span{float:left; line-height:50px; text-indent:10px; font-size:18px; }
-	.col2 input{padding: 15px; width: 380px; margin: 1px 0 0 2px;}
-
-	.col3{float:left; width: 350px; height:50px; background:#ffffff;}
-	.col3 p{line-height:50px; font-size:14px; color:rgba(255,76,77,0.8);}
-
-	#write_box button{float: right; width: 130px; height: 80px; background: #333333; font-size:20px; font-weight:bold; color:#ffffff; margin-right: 30px; margin-top:10px; border-radius: 10px;}
-
-
-
-
+/* 쪽지함 보기(view_msg.php) */
+#message_box .title { margin-top: 30px; padding: 10px; border-bottom: solid 2px #516e7f; font-size: 20px; }
+#view_content li:nth-child(1) {	padding: 15px; border-bottom: solid 1px #aaaaaa; }
+#view_content .col2 { float: right; }
+#view_content li:nth-child(2) {	padding: 15px 15px 80px 15px; border-bottom: solid 1px #cccccc; }
+#view_content li:nth-child(3) button { padding: 5px 20px; margin: 15px 0 40px 720px; cursor: pointer; }
 
 
+	#page_num{width: 1000px; height: 200px; background: #ffffff; position: relative;}
+	#page_num>ul.num{width: 500px; height: 80px; background: #ffffff; position: absolute; left:50%;}
+	#page_num>ul.num li{float: left;}
+	#page_num>ul.num li b{float: left; display: block; padding: 10px;}
+	#page_num>ul.num li a{display: block; padding: 10px; color: #333333;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	

@@ -20,6 +20,14 @@
     </script>   
 </head>
 <body> 
+    <div id="board_go">
+        <h3>빠른이동</h3>
+        <ul>
+            <li><a href="board_list.php">문의게시판</a></li>
+            <li><a href="">내정보바로가기</a></li>
+        </ul>
+        <div class="close_box"></div>
+    </div> 
     <header>
         <?php include "header2.php";?>
     </header>
