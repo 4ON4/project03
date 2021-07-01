@@ -1,8 +1,6 @@
 ﻿$(function(){
 	
-$(function(){
-	
-
+	// alert('a');
 	//최상단메뉴서치박스 search box
 	
 	bb=true;
@@ -51,25 +49,6 @@ $(function(){
 
 	});
 
-	// content1 이동메뉴호버
-	$('.libray_middle_menu li').each(function(){
-		var a = $(this);
-		var img = a.find('img');
-		var src_off = img.attr('src');
-		var src_on = src_off.replace('_show','_hide');
-		$('<img/>').attr('src',src_on);
-		
-		a.bind('mouseenter focus',function(){
-			img.attr('src',src_on);
-			
-		}).bind('mouseleave blur',function(){
-			img.attr('src',src_off);			
-			
-		});
-		
-	});
-
-	
 	// content2 공지사항 옆 이미지 슬라이드
 
 	var library_event_slide =  $('.library_event_slide>ul>li');
@@ -163,8 +142,42 @@ $(function(){
 	};
 
 	listMove();	
-		
 	
+	var balloon = $('<div class="balloon"></div>').appendTo('body');
+	
+	function updateBalloonPosition(x,y){
+		balloon.css({left: x+13, top: y});
+	};
+	function showBalloon(){
+		balloon.stop().css('opacity',0).show().animate({opacity:1},1000);
+	};
+	function hideBalloon(){
+		balloon.stop().animate({opacity:0},1000,function(){balloon.hide()});		
+	};
+	$('.showBalloon').each(function(){
+		var element = $(this);
+		var text = element.attr('title');
+		element.attr('title','');
+		element.hover(
+			function(e){
+				balloon.text(text);
+				updateBalloonPosition(e.pageX,e.pageY);
+				showBalloon();
+			},
+			function(){
+				hideBalloon();
+			}
+		);
+		element.mousemove(function(e){
+			updateBalloonPosition(e.pageX,e.pageY);
+		});
+	});
+	
+	function swing(){
+		$('.icon_message').animate({'top':'-1px'},1000).animate({'top':'15px'},1000);
 		
-});
+	};
+	setInterval(swing,1000);
+
+	swing();	
 });

@@ -37,12 +37,14 @@ footer{height:200px; width:100%;}
 	#header_gnb ul.gnb_menu li{float:left;}
 	#header_gnb ul.gnb_menu li a {display:block; padding:0 6px; line-height:50px; color:#ffffff; font-weight:bold; letter-spacing:0.15em;}
 	#header_gnb ul.gnb_menu li span{display:block; padding:0 6px; line-height:50px; color:#ffffff; font-weight:bold; letter-spacing:0.15em;}
-	#header_gnb ul.gnb_menu li.icon_message img{width:30px; position:relative; bottom:-5px;}
-	#header_gnb ul.gnb_menu li img{width:30px; position:relative; bottom:-5px;}
+	#header_gnb ul.gnb_menu li.icon_message{ position:relative;}
+	#header_gnb ul.gnb_menu li.icon_message img{width:30px; position:relative; bottom:0px;}
+	#header_gnb ul.gnb_menu li img{width:30px; position:relative; bottom:0px;}
 
 	#header_gnb ul.libray_menu{float:left; position:relative;}
 	#header_gnb ul.libray_menu li{float:left;}
 	#header_gnb ul.libray_menu li a img{box-sizing:border-box; height:40px; position:absolute; top:5px; left:5px;}
+
 
 	
 	/* 시계카운터 */
